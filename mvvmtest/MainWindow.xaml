@@ -1,17 +1,17 @@
-﻿<Window x:Class="Kazmierczak.Languer.UI.MainWindow"
+﻿<UserControl x:Class="Kazmierczak.Languer.UI.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Kazmierczak.Languer.UI"
         mc:Ignorable="d"
-        Title="MainWindow" Height="300" Width="300">
-    <Window.DataContext>
+        d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
         <local:CarListViewModel/>
-    </Window.DataContext>
+    </UserControl.DataContext>
 
 
-    <Grid>
+    <Grid Background="White">
         <StackPanel>
             <Label>Hi :)</Label>
             <ListBox Name="lstBox" ItemsSource="{Binding Cars}">
@@ -39,4 +39,4 @@
         </StackPanel>
 
     </Grid>
-</Window>
+</UserControl>

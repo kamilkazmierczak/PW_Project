@@ -12,7 +12,7 @@ using System.Windows.Input;
 
 namespace Kazmierczak.Languer.UI
 {
-    public class CarListViewModel : INotifyPropertyChanged
+    public class CarListViewModel : INotifyPropertyChanged,IPageViewModel
     {
         private ObservableCollection<CarViewModel> _cars;
         private IDAO _dao;
@@ -155,6 +155,14 @@ namespace Kazmierczak.Languer.UI
         public RelayCommand GroupCarsCommand
         {
             get { return _groupCarsCommand; }
+        }
+
+        public string Name
+        {
+            get
+            {
+                return "CarList";
+            }
         }
 
         private void GroupByPrice()

@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\App.xaml
-2652597863
+41194656983
 
-101997478056
+141719587404
 18686305916
-MainWindow.xaml;OldMainWindow.xaml;
+ApplicationView.xaml;HomeView.xaml;MainWindow.xaml;OldMainWindow.xaml;
 
 False
 

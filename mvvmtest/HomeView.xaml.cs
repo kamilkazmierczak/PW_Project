@@ -15,11 +15,11 @@ using System.Windows.Shapes;
 namespace Kazmierczak.Languer.UI
 {
     /// <summary>
-    /// Interaction logic for MainWindow.xaml
+    /// Interaction logic for HomeView.xaml
     /// </summary>
-    public partial class MainWindow : UserControl
+    public partial class HomeView : UserControl
     {
-        public MainWindow()
+        public HomeView()
         {
             InitializeComponent();
         }
