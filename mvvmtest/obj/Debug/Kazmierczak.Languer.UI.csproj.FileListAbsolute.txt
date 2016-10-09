@@ -1,5 +1,4 @@
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.csprojResolveAssemblyReference.cache
-C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\MainWindow.g.cs
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\App.g.cs
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\GeneratedInternalTypeHelper.g.cs
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI_MarkupCompile.cache
@@ -13,7 +12,6 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\Validators.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\Kazmierczak.Languer.DAO.pdb
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\Kazmierczak.Languer.Interfaces.pdb
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\Validators.pdb
-C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\MainWindow.baml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.g.resources
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.Properties.Resources.resources
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.csproj.GenerateResource.Cache
@@ -23,3 +21,7 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.xml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\OldMainWindow.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\OldMainWindow.baml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\MainWindow.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\MainWindow.baml
