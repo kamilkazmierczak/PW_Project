@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Kazmierczak.Languer.Interfaces;
+using Kazmierczak.Languer.DAO;
 
 namespace Kazmierczak.Languer.UI
 {
@@ -16,12 +17,22 @@ namespace Kazmierczak.Languer.UI
             _user = user;
         }
 
+        public UserViewModel()
+        {
+            //moja teoria na razie nie dziala to saveUser bez addUser
+            IDAO dao = new DAO.DAO();
+            IUser user = dao.CreateNewUser();
+            _user = user;
+        }
+
         public string Name
         {
             get { return _user.Name; }
             set
             {
                 _user.Name = value;
+                Console.WriteLine(_user.Name);
+                Console.WriteLine("x");
                 RaisePropertyChanged("Name");
             }
         }

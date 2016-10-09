@@ -21,6 +21,10 @@ namespace Kazmierczak.Languer.UI
             _dao = new DAO.DAO(); // moze byc late binding, wydzielic do osobnej klasy i pobranie z niej obiektu dostepu do danych
             GetAllUsers();
 
+            //IUser user = _dao.CreateNewUser();
+            //UserViewModel uvm = new UserViewModel(user);
+            EditedUser = new UserViewModel();
+
             _addUserCommand = new RelayCommand(param => this.AddUserToList());
             _saveNewUserCommand = new RelayCommand(param => this.SaveUser());
         }
@@ -67,7 +71,16 @@ namespace Kazmierczak.Languer.UI
         {
             //_users.Add(_editedUser); // normalnie zapisać też do DAO
             //_dao.AddUser(_editedUser);
-            Users.Add(_editedUser);
+
+            //IUser user = _dao.CreateNewUser();
+            //UserViewModel uvm = new UserViewModel(user);
+            //EditedUser = uvm;
+            UserViewModel newUser = new UserViewModel();
+            newUser.Name = _editedUser.Name;
+            newUser.UserID = _editedUser.UserID;
+            Users.Add(newUser);
+            EditedUser = new UserViewModel();
+
         }
         //end WTF
 
