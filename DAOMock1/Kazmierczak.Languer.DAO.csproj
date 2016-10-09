@@ -50,6 +50,7 @@
   <ItemGroup>
     <Compile Include="BO\Car.cs" />
     <Compile Include="BO\Producer.cs" />
+    <Compile Include="BO\User.cs" />
     <Compile Include="DAO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

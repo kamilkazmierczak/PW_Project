@@ -11,9 +11,19 @@ namespace Kazmierczak.Languer.DAO
     {
         private List<IProducer> _producers;
         private List<ICar> _cars;
+        //
+        private List<IUser> _users;
 
         public DAO()
         {
+            _users = new List<IUser>()
+            {
+                new BO.User() {UserID=1,Name="Kamil" },
+                new BO.User() {UserID=1,Name="Patryk" },
+                new BO.User() {UserID=1,Name="Roger" }
+            };
+
+
             _producers = new List<IProducer>()
             {
                 new BO.Producer() {ProducerID=1, Name="Volkswagen"},
@@ -43,6 +53,11 @@ namespace Kazmierczak.Languer.DAO
             return _cars;
         }
 
+        public IEnumerable<IUser> GetAllUsers()
+        {
+            return _users;
+        }
+
 
         public ICar CreateNewCar()
         {
@@ -53,5 +68,7 @@ namespace Kazmierczak.Languer.DAO
         {
             _cars.Add(car);
         }
+
+  
     }
 }

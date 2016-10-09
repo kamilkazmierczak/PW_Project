@@ -52,6 +52,7 @@
     <Compile Include="IDAO.cs" />
     <Compile Include="IPageViewModel.cs" />
     <Compile Include="IProducer.cs" />
+    <Compile Include="IUser.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -10,6 +10,8 @@ namespace Kazmierczak.Languer.Interfaces
     {
         IEnumerable<IProducer> GetAllProducers();
         IEnumerable<ICar> GetAllCars();
+        //
+        IEnumerable<IUser> GetAllUsers();
 
         ICar CreateNewCar();
         void AddCar(ICar car);
