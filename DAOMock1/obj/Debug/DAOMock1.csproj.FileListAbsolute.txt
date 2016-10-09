@@ -1,0 +1,14 @@
+E:\sem6\pw\mvvmtest\DAOMock1\obj\Debug\DAOMock1.csprojResolveAssemblyReference.cache
+E:\sem6\pw\mvvmtest\DAOMock1\bin\Debug\DAOMock1.dll
+E:\sem6\pw\mvvmtest\DAOMock1\bin\Debug\DAOMock1.pdb
+E:\sem6\pw\mvvmtest\DAOMock1\bin\Debug\Interfaces.dll
+E:\sem6\pw\mvvmtest\DAOMock1\bin\Debug\Interfaces.pdb
+E:\sem6\pw\mvvmtest\DAOMock1\obj\Debug\DAOMock1.dll
+E:\sem6\pw\mvvmtest\DAOMock1\obj\Debug\DAOMock1.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\bin\Debug\DAOMock1.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\bin\Debug\DAOMock1.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\bin\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\bin\Debug\Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\obj\Debug\DAOMock1.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\obj\Debug\DAOMock1.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\DAOMock1\obj\Debug\DAOMock1.pdb

@@ -1,0 +1,14 @@
+E:\sem6\pw\mvvmtest\Validators\bin\Debug\Validators.dll
+E:\sem6\pw\mvvmtest\Validators\bin\Debug\Validators.pdb
+E:\sem6\pw\mvvmtest\Validators\obj\Debug\Validators.csprojResolveAssemblyReference.cache
+E:\sem6\pw\mvvmtest\Validators\obj\Debug\Validators.dll
+E:\sem6\pw\mvvmtest\Validators\obj\Debug\Validators.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Validators\bin\Debug\Validators.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Validators\bin\Debug\Validators.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Validators\obj\Debug\Validators.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Validators\obj\Debug\Validators.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Validators\obj\Debug\Validators.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\Validators.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\Validators.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\obj\Debug\Validators.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\obj\Debug\Validators.pdb

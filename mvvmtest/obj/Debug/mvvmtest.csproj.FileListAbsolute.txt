@@ -1,0 +1,76 @@
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe.config
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csprojResolveAssemblyReference.cache
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\MainWindow.g.cs
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\App.g.cs
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.cache
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.lref
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\mvvmtest.pdb
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\DAOMock1.dll
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\Interfaces.dll
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\DAOMock1.pdb
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\Interfaces.pdb
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\MainWindow.baml
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.g.resources
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.Properties.Resources.resources
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csproj.GenerateResource.Cache
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.exe
+E:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.pdb
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\Validators.dll
+E:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\Validators.pdb
+H:\sem6\pw\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe.config
+H:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.exe
+H:\sem6\pw\mvvmtest\mvvmtest\obj\Debug\mvvmtest.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe.config
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.exe
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\mvvmtest.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\DAOMock1.dll
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\Interfaces.dll
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\Validators.dll
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\DAOMock1.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\Interfaces.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\bin\Debug\Validators.pdb
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csprojResolveAssemblyReference.cache
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\MainWindow.g.cs
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\App.g.cs
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.cache
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.lref
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\MainWindow.baml
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.g.resources
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.Properties.Resources.resources
+C:\Users\Gopher\Documents\Studia\Semestr 6\Programowanie_Wizualne\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csproj.GenerateResource.Cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe.config
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.exe
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\mvvmtest.exe
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\mvvmtest.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\DAOMock1.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\Validators.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\DAOMock1.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\bin\Debug\Validators.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\MainWindow.g.cs
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\App.g.cs
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.lref
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\MainWindow.baml
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.g.resources
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.Properties.Resources.resources
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\mvvmtest\obj\Debug\mvvmtest.csproj.GenerateResource.Cache
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\mvvmtest.exe.config
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\mvvmtest.exe
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\mvvmtest.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\mvvmtest.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\MainWindow.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\App.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.cache
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\mvvmtest_MarkupCompile.lref
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\Kazmierczak.Languer.UI.exe.config

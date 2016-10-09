@@ -1,0 +1,4 @@
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\Kazmierczak.Languer.Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\Kazmierczak.Languer.Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Kazmierczak.Languer.Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Kazmierczak.Languer.Interfaces.pdb

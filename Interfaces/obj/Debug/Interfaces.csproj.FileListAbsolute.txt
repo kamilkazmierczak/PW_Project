@@ -1,0 +1,15 @@
+E:\sem6\pw\mvvmtest\Interfaces\bin\Debug\Interfaces.dll
+E:\sem6\pw\mvvmtest\Interfaces\bin\Debug\Interfaces.pdb
+E:\sem6\pw\mvvmtest\Interfaces\obj\Debug\Interfaces.dll
+E:\sem6\pw\mvvmtest\Interfaces\obj\Debug\Interfaces.pdb
+E:\sem6\pw\mvvmtest\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\mvvmtest\Interfaces\obj\Debug\Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Interfaces.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Interfaces.pdb

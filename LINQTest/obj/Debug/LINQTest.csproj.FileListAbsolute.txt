@@ -1,0 +1,8 @@
+E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\LINQTest.exe.config
+E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\LINQTest.exe
+E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\LINQTest.pdb
+E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\Cars.DB_1.dll
+E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\Interfaces.dll
+E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.csprojResolveAssemblyReference.cache
+E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.exe
+E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.pdb
