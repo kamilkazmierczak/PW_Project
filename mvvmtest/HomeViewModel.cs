@@ -8,23 +8,13 @@ using Kazmierczak.Languer.Interfaces;
 
 namespace Kazmierczak.Languer.UI
 {
-    public class HomeViewModel : INotifyPropertyChanged, IPageViewModel
+    public class HomeViewModel : ObservableObject, IPageViewModel
     {
         public string Name
         {
             get
             {
                 return "Home Page";
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
     }

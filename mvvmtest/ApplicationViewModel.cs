@@ -10,7 +10,7 @@ using Kazmierczak.Languer.Interfaces;
 
 namespace Kazmierczak.Languer.UI
 {
-    public class ApplicationViewModel : INotifyPropertyChanged
+    public class ApplicationViewModel : ObservableObject
     {
         private ICommand _changePageCommand;
         private IPageViewModel _currentPageViewModel;
@@ -81,14 +81,5 @@ namespace Kazmierczak.Languer.UI
         }
         #endregion
 
-        public event PropertyChangedEventHandler PropertyChanged;
-
-        private void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
-            }
-        }
     }
 }

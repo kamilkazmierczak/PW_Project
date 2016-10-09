@@ -12,7 +12,7 @@ using System.Windows.Input;
 
 namespace Kazmierczak.Languer.UI
 {
-    public class CarListViewModel : INotifyPropertyChanged,IPageViewModel
+    public class CarListViewModel : ObservableObject,IPageViewModel
     {
         private ObservableCollection<CarViewModel> _cars;
         private IDAO _dao;
@@ -49,16 +49,6 @@ namespace Kazmierczak.Languer.UI
             foreach (var c in _dao.GetAllCars())
             {
                 _cars.Add(new CarViewModel(c));
-            }
-        }
-
-        public event PropertyChangedEventHandler PropertyChanged;
-        
-        private void RaisePropertyChanged(string propertyName)
-        {
-            if (PropertyChanged != null)
-            {
-                PropertyChanged(this, new PropertyChangedEventArgs(propertyName));
             }
         }
 
