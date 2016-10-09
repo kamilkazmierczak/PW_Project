@@ -29,3 +29,5 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\ApplicationView.
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\ApplicationView.baml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\HomeView.g.cs
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\HomeView.baml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\LoginView.g.cs
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\LoginView.baml
