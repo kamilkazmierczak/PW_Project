@@ -13,16 +13,16 @@
     <Grid Background="White">
         <StackPanel>
             <Label>Login</Label>
-            <ListBox Name="lstBox" ItemsSource="{Binding Users}">
-                <ListBox.ItemTemplate>
+            <ComboBox Name="comboBox" ItemsSource="{Binding Users}">
+                <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
                             <Label Content="{Binding UserID}"/>
                             <Label Content="{Binding Name}" MinWidth="60"/>
                         </StackPanel>
                     </DataTemplate>
-                </ListBox.ItemTemplate>
-            </ListBox>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
         </StackPanel>
         
 
