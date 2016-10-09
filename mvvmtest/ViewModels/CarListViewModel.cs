@@ -1,5 +1,6 @@
 ﻿using Kazmierczak.Languer.Interfaces;
 using Kazmierczak.Languer.DAO;
+using Kazmierczak.Languer.UI;
 using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
@@ -10,7 +11,7 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Input;
 
-namespace Kazmierczak.Languer.UI
+namespace Kazmierczak.Languer.UI.ViewModels
 {
     public class CarListViewModel : INotifyPropertyChanged
     {

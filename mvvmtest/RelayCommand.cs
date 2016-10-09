@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Input;
 
-namespace mvvmtest
+namespace Kazmierczak.Languer.UI
 {
     public class RelayCommand : ICommand
     {

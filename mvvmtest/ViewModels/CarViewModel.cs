@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Kazmierczak.Languer.UI
+namespace Kazmierczak.Languer.UI.ViewModels
 {
     public class CarViewModel : INotifyPropertyChanged, INotifyDataErrorInfo
     {

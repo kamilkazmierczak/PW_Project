@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Windows.Data;
 using System.Windows.Media;
 
-namespace mvvmtest
+namespace Kazmierczak.Languer.UI
 {
     public class YearToColorConverter : IValueConverter
     {

@@ -1,7 +1,8 @@
 ﻿<Window x:Class="mvvmtest.MainWindow"
         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:local="clr-namespace:Kazmierczak.Languer.UI"
+        xmlns:local="clr-namespace:Kazmierczak.Languer.UI.View"
+        xmlns:viewModels="clr-namespace:Kazmierczak.Languer.UI.ViewModels"
         xmlns:validators="clr-namespace:Validators;assembly=Validators"
         Title="MainWindow" Height="350" Width="525">
     <Window.Resources>
@@ -40,11 +41,11 @@
             </Setter>
         </Style>
         <validators:IntRangeValidator x:Key="IntRangeValid"/>
-        <local:YearToColorConverter x:Key="ColorConverter"/>
+        <viewModels:YearToColorConverter x:Key="ColorConverter"/>
     </Window.Resources>
     
     <Window.DataContext>
-        <local:CarListViewModel></local:CarListViewModel>
+        <viewModels:CarListViewModel></viewModels:CarListViewModel>
     </Window.DataContext>
     
     <DockPanel LastChildFill="True">
