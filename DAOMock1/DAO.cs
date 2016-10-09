@@ -69,6 +69,14 @@ namespace Kazmierczak.Languer.DAO
             _cars.Add(car);
         }
 
-  
+        public IUser CreateNewUser()
+        {
+            return new BO.User();
+        }
+
+        public void AddUser(IUser user)
+        {
+            _users.Add(user);
+        }
     }
 }

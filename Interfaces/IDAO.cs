@@ -15,5 +15,8 @@ namespace Kazmierczak.Languer.Interfaces
 
         ICar CreateNewCar();
         void AddCar(ICar car);
+        //
+        IUser CreateNewUser();
+        void AddUser(IUser user);
     }
 }
