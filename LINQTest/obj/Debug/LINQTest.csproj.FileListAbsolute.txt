@@ -6,3 +6,15 @@ E:\sem6\pw\mvvmtest\LINQTest\bin\Debug\Interfaces.dll
 E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.csprojResolveAssemblyReference.cache
 E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.exe
 E:\sem6\pw\mvvmtest\LINQTest\obj\Debug\LINQTest.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\LINQTest.exe.config
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\LINQTest.exe
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\LINQTest.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\Cars.DB_1.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\Interfaces.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.xml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.csprojResolveAssemblyReference.cache
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.exe
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.pdb

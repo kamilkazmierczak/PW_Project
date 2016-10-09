@@ -19,3 +19,7 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Lang
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.csproj.GenerateResource.Cache
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.exe
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\obj\Debug\Kazmierczak.Languer.UI.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.xml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\mvvmtest\bin\Debug\EntityFramework.SqlServer.xml
