@@ -24,9 +24,22 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
 
-           <Label>Add new user</Label>
            
-           <Button Command="{Binding AddUserCommand}">Add User</Button>
+           <StackPanel DataContext="{Binding Path=EditedUser}">
+                <Label>Add new user</Label>
+                <TextBox>
+                    <TextBox.Text>
+                        <Binding Path="UserID" Mode="TwoWay"/>
+                    </TextBox.Text>
+                </TextBox>
+                <TextBox Text="{Binding Name}"/>
+                <!--<TextBox Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>-->
+            </StackPanel>
+            
+                <Button Command="{Binding AddUserCommand}">Add User</Button>
+                <Button Command="{Binding SaveNewUserCommand}">Save User</Button>
+            
+           
            
         </StackPanel>
         

@@ -63,6 +63,7 @@ namespace Kazmierczak.Languer.UI
             CarViewModel cvm = new CarViewModel(car);
             //_dao.AddCar(car);
             //Cars.Add(cvm);
+    
             EditedCar = cvm; // nie dodajemy do listy jeszcze
         }
 

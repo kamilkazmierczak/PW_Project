@@ -22,6 +22,7 @@ namespace Kazmierczak.Languer.UI
             GetAllUsers();
 
             _addUserCommand = new RelayCommand(param => this.AddUserToList());
+            _saveNewUserCommand = new RelayCommand(param => this.SaveUser());
         }
 
         public ICommand AddUserCommand
@@ -32,12 +33,44 @@ namespace Kazmierczak.Languer.UI
         private void AddUserToList()
         {
             IUser user = _dao.CreateNewUser();
-            user.Name = "ratata";
-            user.UserID = 44;
+            //user.Name = "ratata";
+            //user.UserID = 44;
             UserViewModel uvm = new UserViewModel(user);
-            _dao.AddUser(user);
-            Users.Add(uvm);
+            EditedUser = uvm;
+            //Console.WriteLine("dodalem");
+            //_dao.AddUser(user);
+            //Users.Add(uvm);
         }
+
+        //WTF
+        private RelayCommand _saveNewUserCommand;
+        //private ICommand _saveNewUserCommand; //dla add bylo RelayComamnd a nie ICommand
+
+        public ICommand SaveNewUserCommand
+        {
+            get { return _saveNewUserCommand; }
+        }
+
+        private UserViewModel _editedUser;
+
+        public UserViewModel EditedUser
+        {
+            get { return _editedUser; }
+            set
+            {
+                _editedUser = value;
+                RaisePropertyChanged("EditedUser");
+            }
+        }
+
+        private void SaveUser()
+        {
+            //_users.Add(_editedUser); // normalnie zapisać też do DAO
+            //_dao.AddUser(_editedUser);
+            Users.Add(_editedUser);
+        }
+        //end WTF
+
 
         private void GetAllUsers()
         {
