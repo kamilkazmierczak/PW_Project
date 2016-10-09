@@ -19,8 +19,8 @@ namespace Kazmierczak.Languer.DAO
             _users = new List<IUser>()
             {
                 new BO.User() {UserID=1,Name="Kamil" },
-                new BO.User() {UserID=1,Name="Patryk" },
-                new BO.User() {UserID=1,Name="Roger" }
+                new BO.User() {UserID=2,Name="Patryk" },
+                new BO.User() {UserID=3,Name="Roger" }
             };
 
 

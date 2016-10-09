@@ -6,8 +6,25 @@
         xmlns:local="clr-namespace:Kazmierczak.Languer.UI"
         mc:Ignorable="d"
         d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <local:UserListViewModel/>
+    </UserControl.DataContext>
+    
     <Grid Background="White">
-        <Label>Login</Label>
+        <StackPanel>
+            <Label>Login</Label>
+            <ListBox Name="lstBox" ItemsSource="{Binding Users}">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding UserID}"/>
+                            <Label Content="{Binding Name}" MinWidth="60"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+        </StackPanel>
+        
 
     </Grid>
 </UserControl>
