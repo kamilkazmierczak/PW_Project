@@ -36,7 +36,7 @@
                 <!--<TextBox Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>-->
             </StackPanel>
             
-                <Button Command="{Binding AddUserCommand}">Add User</Button>
+                <!--<Button Command="{Binding AddUserCommand}">Add User</Button>-->
                 <Button Command="{Binding SaveNewUserCommand}">Save User</Button>
             
            
