@@ -10,7 +10,12 @@ namespace Kazmierczak.Languer.DAO.BO
 {
     public class User : IUser
     {
-        
+        public IEnumerable<IDictionary> DictionariesList
+        {
+            get;
+            set;
+        }
+
         public string Name
         {
             get;
