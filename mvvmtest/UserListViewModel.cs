@@ -7,6 +7,8 @@ using Kazmierczak.Languer.Interfaces;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
 using Kazmierczak.Languer.DAO;
+using System.ComponentModel;
+using System.Windows;
 
 namespace Kazmierczak.Languer.UI
 {
@@ -19,6 +21,10 @@ namespace Kazmierczak.Languer.UI
 
         public UserListViewModel()
         {
+            #if DEBUG
+            if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
+            #endif
+
             _users = new ObservableCollection<UserViewModel>();
             _dao = new DAO.DAO(); // moze byc late binding, wydzielic do osobnej klasy i pobranie z niej obiektu dostepu do danych
             GetAllUsers();

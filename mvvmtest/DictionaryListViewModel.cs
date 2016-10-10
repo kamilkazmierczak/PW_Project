@@ -7,6 +7,8 @@ using Kazmierczak.Languer.Interfaces;
 using Kazmierczak.Languer.DAO;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using System.ComponentModel;
+using System.Windows;
 
 namespace Kazmierczak.Languer.UI
 {
@@ -19,6 +21,10 @@ namespace Kazmierczak.Languer.UI
 
         public DictionaryListViewModel()
         {
+            #if DEBUG
+            if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
+            #endif
+
             _dictionaries = new ObservableCollection<DictionaryViewModel>();
             _dao = new DAO.DAO();
             GetAllDictionaries();
