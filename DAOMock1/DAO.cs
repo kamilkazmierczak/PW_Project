@@ -86,11 +86,7 @@ namespace Kazmierczak.Languer.DAO
             using (var context = new DataContext())
             {
                 var usersIDs = context.Users.Select(x => x.UserID);
-                if (usersIDs == null){
-                    user.UserID = 1;
-                }else{
-                    user.UserID = usersIDs.Max() + 1;
-                };
+                user.UserID = usersIDs == null ? usersIDs.Max() + 1 : 1;
                 context.Users.Add(user as User);
                 context.SaveChanges();
             }
