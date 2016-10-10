@@ -37,7 +37,6 @@ namespace Kazmierczak.Languer.UI
             FilterData = "";
             GetAllCars();
 
-            _addCarCommand = new RelayCommand(param => this.AddCarToList());
             _saveNewCarCommand = new RelayCommand(param => this.SaveCar(), // bo argument to delegat Action
                                                   param => this.CanSaveCar());
             _filterDataCommand = new RelayCommand(param => this.DoFilterData());
@@ -57,15 +56,15 @@ namespace Kazmierczak.Languer.UI
             get { return _addCarCommand; } // wlasciwosc tylko do odczytu
         }
 
-        private void AddCarToList()
-        {
-            ICar car = _dao.CreateNewCar();
-            CarViewModel cvm = new CarViewModel(car);
-            //_dao.AddCar(car);
-            //Cars.Add(cvm);
+        //private void AddCarToList()
+        //{
+        //    ICar car = _dao.CreateNewCar();
+        //    CarViewModel cvm = new CarViewModel(car);
+        //    //_dao.AddCar(car);
+        //    //Cars.Add(cvm);
     
-            EditedCar = cvm; // nie dodajemy do listy jeszcze
-        }
+        //    EditedCar = cvm; // nie dodajemy do listy jeszcze
+        //}
 
         // osobna komenda do tworzenia i zapisywania
         private ICommand _saveNewCarCommand;

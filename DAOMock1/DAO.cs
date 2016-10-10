@@ -10,8 +10,8 @@ namespace Kazmierczak.Languer.DAO
 {
     public class DAO : IDAO
     {
-        private List<IProducer> _producers;
-        private List<ICar> _cars;
+        //private List<IProducer> _producers;
+        //private List<ICar> _cars;
         //
         //private List<IUser> _users;
 
@@ -46,15 +46,15 @@ namespace Kazmierczak.Languer.DAO
             */
         }
 
-        public IEnumerable<IProducer> GetAllProducers()
-        {
-            return _producers;
-        }
+        //public IEnumerable<IProducer> GetAllProducers()
+        //{
+        //    return _producers;
+        //}
 
-        public IEnumerable<ICar> GetAllCars()
-        {
-            return _cars;
-        }
+        //public IEnumerable<ICar> GetAllCars()
+        //{
+        //    return _cars;
+        //}
 
         public IEnumerable<IUser> GetAllUsers()
         {
@@ -71,10 +71,10 @@ namespace Kazmierczak.Languer.DAO
             return new BO.Car();
         }
 
-        public void AddCar(ICar car)
-        {
-            _cars.Add(car);
-        }
+        //public void AddCar(ICar car)
+        //{
+        //    _cars.Add(car);
+        //}
 
         public IUser CreateNewUser()
         {

@@ -8,13 +8,13 @@ namespace Kazmierczak.Languer.Interfaces
 {
     public interface IDAO
     {
-        IEnumerable<IProducer> GetAllProducers();
-        IEnumerable<ICar> GetAllCars();
+        //IEnumerable<IProducer> GetAllProducers();
+        //IEnumerable<ICar> GetAllCars();
         //
         IEnumerable<IUser> GetAllUsers();
 
-        ICar CreateNewCar();
-        void AddCar(ICar car);
+        //ICar CreateNewCar();
+        //void AddCar(ICar car);
         //
         IUser CreateNewUser();
         void AddUser(IUser user);
