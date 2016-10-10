@@ -46,10 +46,10 @@ namespace Kazmierczak.Languer.UI
 
         private void GetAllCars()
         {
-            foreach (var c in _dao.GetAllCars())
-            {
-                _cars.Add(new CarViewModel(c));
-            }
+            //foreach (var c in _dao.GetAllCars())
+            //{
+            //    _cars.Add(new CarViewModel(c));
+            //}
         }
 
         public ICommand AddCarCommand

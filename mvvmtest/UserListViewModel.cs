@@ -79,6 +79,7 @@ namespace Kazmierczak.Languer.UI
             newUser.Name = _editedUser.Name;
             newUser.UserID = _editedUser.UserID;
             Users.Add(newUser);
+            _dao.AddUser(newUser.getUser());
             EditedUser = new UserViewModel();
 
         }

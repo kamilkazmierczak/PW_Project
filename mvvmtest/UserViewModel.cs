@@ -12,6 +12,11 @@ namespace Kazmierczak.Languer.UI
     {
         private IUser _user;
 
+        public IUser getUser()
+        {
+            return _user;
+        }
+
         public UserViewModel(IUser user)
         {
             _user = user;

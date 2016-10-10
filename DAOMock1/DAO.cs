@@ -1,4 +1,5 @@
-﻿using Kazmierczak.Languer.Interfaces;
+﻿using Kazmierczak.Languer.DAO.BO;
+using Kazmierczak.Languer.Interfaces;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -16,6 +17,7 @@ namespace Kazmierczak.Languer.DAO
 
         public DAO()
         {
+            /*
             _users = new List<IUser>()
             {
                 new BO.User() {UserID=1,Name="Kamil" },
@@ -41,6 +43,7 @@ namespace Kazmierczak.Languer.DAO
                 new BO.Car() {CarID=6, Name="Astra", Producer=_producers[2], ProdYear=2012, Color="Brown", Price=4343},
                 new BO.Car() {CarID=7, Name="Corsa", Producer=_producers[2], ProdYear=2014, Color="Black", Price=2412},
             };
+            */
         }
 
         public IEnumerable<IProducer> GetAllProducers()
@@ -55,7 +58,11 @@ namespace Kazmierczak.Languer.DAO
 
         public IEnumerable<IUser> GetAllUsers()
         {
-            return _users;
+            using(var context = new DataContext())
+            {
+                return Enumerable.Cast<IUser>(context.Users).ToList();
+            }
+            //return _users;
         }
 
 
@@ -76,7 +83,12 @@ namespace Kazmierczak.Languer.DAO
 
         public void AddUser(IUser user)
         {
-            _users.Add(user);
+            using (var context = new DataContext())
+            {
+                context.Users.Add(user as User);
+                context.SaveChanges();
+            }
+            //_users.Add(user);
         }
     }
 }
