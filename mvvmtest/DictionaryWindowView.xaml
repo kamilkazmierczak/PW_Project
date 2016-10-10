@@ -11,11 +11,11 @@
     </UserControl.DataContext>
     <Grid Background="White">
         <StackPanel>
-            <StackPanel DataContext="{Binding Path=newDictionary}">
+            <StackPanel DataContext="{Binding Path=NewDictionary}">
                 <Label>Add new Dictionary</Label>
                 <TextBox Text="{Binding Name}"/>
             </StackPanel>
-            <Button Command="{Binding AddNewDictionaryCommand}">Save User</Button>
+            <Button Command="{Binding SaveNewDictionaryCommand}">Save Dictionary</Button>
         </StackPanel>
         
         
