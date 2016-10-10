@@ -12,7 +12,7 @@ namespace Kazmierczak.Languer.UI
     {
         private IDictionary _dictionary;
 
-        public IDictionary getUser()
+        public IDictionary getDictionary()
         {
             return _dictionary;
         }

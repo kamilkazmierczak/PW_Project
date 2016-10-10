@@ -10,6 +10,22 @@ namespace Kazmierczak.Languer.DAO
     public static class CurrentOptions
     {
         private static IUser _currentUser;
+        private static IDictionary _currentDictionary;
+
+        public static IDictionary CurrentDictionary
+        {
+            get
+            {
+                return _currentDictionary;
+            }
+            set
+            {
+                _currentDictionary = value;
+                Console.Write("CurrentDictionary = ");
+                Console.WriteLine(_currentDictionary.DictionaryID + _currentDictionary.Name);
+            }
+        }
+
         public static IUser CurrentUser
         {
             get
