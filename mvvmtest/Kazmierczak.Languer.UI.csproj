@@ -66,6 +66,12 @@
       <DependentUpon>ApplicationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ApplicationViewModel.cs" />
+    <Compile Include="DictionaryListViewModel.cs" />
+    <Compile Include="DictionaryViewModel.cs" />
+    <Compile Include="DictionaryWindowView.xaml.cs">
+      <DependentUpon>DictionaryWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="DictionaryWindowViewModel.cs" />
     <Compile Include="HomeView.xaml.cs">
       <DependentUpon>HomeView.xaml</DependentUpon>
     </Compile>
@@ -83,6 +89,10 @@
     <Compile Include="UserViewModel.cs" />
     <Compile Include="YearToColorConverter.cs" />
     <Page Include="ApplicationView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="DictionaryWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

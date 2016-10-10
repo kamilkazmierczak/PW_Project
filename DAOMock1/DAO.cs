@@ -46,5 +46,29 @@ namespace Kazmierczak.Languer.DAO
                 context.SaveChanges();
             }
         }
+
+        public IEnumerable<IDictionary> GetAllDictionaries()
+        {
+            using (var context = new DataContext())
+            {
+                return Enumerable.Cast<IDictionary>(context.Dictionaries).ToList();
+            }
+        }
+
+        public IDictionary CreateNewDictionary()
+        {
+            return new BO.Dictionary();
+        }
+
+        public void addDictionary(IDictionary dictionary)
+        {
+            using (var context = new DataContext())
+            {
+                var dictionariesIDs = context.Dictionaries.Select(x => x.DictionaryID);
+                dictionary.DictionaryID = dictionariesIDs == null ? dictionariesIDs.Max() + 1 : 1;
+                context.Dictionaries.Add(dictionary as Dictionary);
+                context.SaveChanges();
+            }
+        }
     }
 }

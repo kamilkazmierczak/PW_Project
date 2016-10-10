@@ -23,6 +23,7 @@ namespace Kazmierczak.Languer.UI
             PageViewModels.Add(new HomeViewModel());
             PageViewModels.Add(new CarListViewModel());
             PageViewModels.Add(new LoginViewModel());
+            PageViewModels.Add(new DictionaryWindowViewModel());
 
             CurrentPageViewModel = PageViewModels[0];           
         }
