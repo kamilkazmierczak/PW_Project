@@ -13,7 +13,7 @@ namespace Kazmierczak.Languer.DAO
         private List<IProducer> _producers;
         private List<ICar> _cars;
         //
-        private List<IUser> _users;
+        //private List<IUser> _users;
 
         public DAO()
         {
@@ -85,6 +85,12 @@ namespace Kazmierczak.Languer.DAO
         {
             using (var context = new DataContext())
             {
+                var usersIDs = context.Users.Select(x => x.UserID);
+                if (usersIDs == null){
+                    user.UserID = 1;
+                }else{
+                    user.UserID = usersIDs.Max() + 1;
+                };
                 context.Users.Add(user as User);
                 context.SaveChanges();
             }

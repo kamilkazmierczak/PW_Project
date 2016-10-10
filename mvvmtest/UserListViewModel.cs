@@ -13,7 +13,6 @@ namespace Kazmierczak.Languer.UI
     {
         private ObservableCollection<UserViewModel> _users;
         private IDAO _dao;
-        private RelayCommand _addUserCommand;
 
         public UserListViewModel()
         {
@@ -25,28 +24,10 @@ namespace Kazmierczak.Languer.UI
             //UserViewModel uvm = new UserViewModel(user);
             EditedUser = new UserViewModel();
 
-            _addUserCommand = new RelayCommand(param => this.AddUserToList());
             _saveNewUserCommand = new RelayCommand(param => this.SaveUser());
         }
 
-        public ICommand AddUserCommand
-        {
-            get { return _addUserCommand; } // wlasciwosc tylko do odczytu
-        }
-
-        private void AddUserToList()
-        {
-            IUser user = _dao.CreateNewUser();
-            //user.Name = "ratata";
-            //user.UserID = 44;
-            UserViewModel uvm = new UserViewModel(user);
-            EditedUser = uvm;
-            //Console.WriteLine("dodalem");
-            //_dao.AddUser(user);
-            //Users.Add(uvm);
-        }
-
-        //WTF
+       
         private RelayCommand _saveNewUserCommand;
         //private ICommand _saveNewUserCommand; //dla add bylo RelayComamnd a nie ICommand
 

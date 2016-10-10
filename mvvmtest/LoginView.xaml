@@ -27,11 +27,6 @@
            
            <StackPanel DataContext="{Binding Path=EditedUser}">
                 <Label>Add new user</Label>
-                <TextBox>
-                    <TextBox.Text>
-                        <Binding Path="UserID" Mode="TwoWay"/>
-                    </TextBox.Text>
-                </TextBox>
                 <TextBox Text="{Binding Name}"/>
                 <!--<TextBox Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>-->
             </StackPanel>
