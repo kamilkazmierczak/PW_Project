@@ -36,8 +36,8 @@ namespace Kazmierczak.Languer.UI
             set
             {
                 _user.Name = value;
-                Console.WriteLine(_user.Name);
-                Console.WriteLine("x");
+                //Console.WriteLine(_user.Name);
+                //Console.WriteLine("x");
                 RaisePropertyChanged("Name");
             }
         }

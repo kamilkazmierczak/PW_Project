@@ -13,7 +13,7 @@
     <Grid Background="White">
         <StackPanel>
             <Label>Choose user</Label>
-            <ComboBox Name="comboBox" ItemsSource="{Binding Users}">
+            <ComboBox Name="comboBox" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedItem}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">

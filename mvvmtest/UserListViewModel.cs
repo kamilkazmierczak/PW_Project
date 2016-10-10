@@ -6,12 +6,15 @@ using System.Threading.Tasks;
 using Kazmierczak.Languer.Interfaces;
 using System.Collections.ObjectModel;
 using System.Windows.Input;
+using Kazmierczak.Languer.DAO;
 
 namespace Kazmierczak.Languer.UI
 {
     public class UserListViewModel : ObservableObject
     {
         private ObservableCollection<UserViewModel> _users;
+        private UserViewModel _editedUser;
+        private UserViewModel _selectedItem;
         private IDAO _dao;
 
         public UserListViewModel()
@@ -36,7 +39,16 @@ namespace Kazmierczak.Languer.UI
             get { return _saveNewUserCommand; }
         }
 
-        private UserViewModel _editedUser;
+        public UserViewModel SelectedItem
+        {
+            get { return _selectedItem; }
+            set
+            {
+                _selectedItem = value;
+                CurrentOptions.CurrentUser = _selectedItem.getUser();
+                RaisePropertyChanged("SelectedItem");
+            }
+        }
 
         public UserViewModel EditedUser
         {
