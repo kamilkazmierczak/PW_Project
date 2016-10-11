@@ -17,5 +17,7 @@ namespace Kazmierczak.Languer.DAO.BO
         public int Incorrect { get; set; }
         public string OriginName { get; set; }
         public string SecondName { get; set; }
+
+        public virtual Dictionary Dictionary { get; set; }
     }
 }

@@ -15,21 +15,12 @@ namespace Kazmierczak.Languer.DAO.BO
         public string Name { get; set; }
 
         public virtual User User { get; set; }
-        //connection to User
-        //public int UserID { get; set; }
-        //public virtual User User { get; set; }
 
-        //public virtual List<IUser> Users
-        //{
-        //    get;
-        //    set;
-        //}
+        public Dictionary()
+        {
+            Words = new List<Word>();
+        }
 
-        //public Dictionary()
-        //{
-        //    Users = new List<IUser>();
-        //}
-
-        //public List<IWord> WordsList { get; set; }
+        public virtual List<Word> Words { get; set; }
     }
 }

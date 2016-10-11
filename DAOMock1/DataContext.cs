@@ -12,6 +12,6 @@ namespace Kazmierczak.Languer.DAO
     {
         public virtual DbSet<User> Users { get; set; }
         public virtual DbSet<Dictionary> Dictionaries { get; set; }
-        //public virtual DbSet<Word> Words { get; set; }
+        public virtual DbSet<Word> Words { get; set; }
     }
 }
