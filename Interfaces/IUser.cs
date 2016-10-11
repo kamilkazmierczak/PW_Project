@@ -1,8 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Kazmierczak.Languer;
+using System.Collections.Generic;
+//using Kazmierczak.Languer.DAO;
 
 namespace Kazmierczak.Languer.Interfaces
 {
@@ -10,10 +12,6 @@ namespace Kazmierczak.Languer.Interfaces
     {
         int UserID { get; set; }
         string Name { get; set; }
-
-        //IDictionary Dictionary { get; set; }
-        //List<IDictionary> Dictionaries { get; set; }
-        //void addUserDictionary(IDictionary dictionary);
 
     }
 }

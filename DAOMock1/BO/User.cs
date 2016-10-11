@@ -12,62 +12,14 @@ namespace Kazmierczak.Languer.DAO.BO
     {
 
         [Key]
-        public int UserID
-        {
-            get;
-            set;
-        }
-
-        public virtual List<Dictionary> Dictionaries
-        {
-            get;
-            set;
-        }
+        public int UserID { get; set; }
+        public string Name { get; set; }
 
         public User()
         {
             Dictionaries = new List<Dictionary>();
         }
 
-        //connection to Dictionary
-        //public int DictionaryID { get; set; }
-        //public virtual Dictionary Dictionary { get; set; }
-
-        //public virtual List<IDictionary> Dictionaries
-        //{
-        //    get;
-        //    set;
-        //}
-
-
-
-        public string Name
-        {
-            get;
-            set;
-        }
-
-
-
-
-
-        //public User()
-        //{
-        //    Dictionaries = new List<IDictionary>();
-        //}
-
-        //public void addUserDictionary(IDictionary dictionary)
-        //{
-        //    foreach (var dic in DictionariesList)
-        //    {
-        //        if (dictionary.Name == dic.Name)
-        //        {
-
-        //        }else
-        //        {
-        //            (List<Dictionary>)DictionariesList.add
-        //        }
-        //    }
-        //}
+        public virtual List<Dictionary> Dictionaries { get; set; }
     }
 }

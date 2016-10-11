@@ -10,6 +10,5 @@ namespace Kazmierczak.Languer.Interfaces
     {
         int DictionaryID { get; set; }
         string Name { get; set; }
-        //List<IUser> Users { get; set; }
     }
 }
