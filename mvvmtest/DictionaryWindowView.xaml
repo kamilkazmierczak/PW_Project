@@ -11,6 +11,17 @@
     </UserControl.DataContext>
     <Grid Background="White">
         <StackPanel>
+            <Label>Choose Dictionary</Label>
+            <ComboBox Name="comboBox" ItemsSource="{Binding Dictionaries}" SelectedItem="{Binding SelectedDictionary}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding DictionaryID}"/>
+                            <Label Content="{Binding Name}" MinWidth="60"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
             <StackPanel DataContext="{Binding Path=NewDictionary}">
                 <Label>Add new Dictionary</Label>
                 <TextBox Text="{Binding Name}"/>
