@@ -55,6 +55,7 @@ namespace Kazmierczak.Languer.DAO
         public void addWord(IWord word)
         {
             Console.WriteLine("Adding Word");
+            Console.WriteLine(word.OriginName + word.SecondName);
             //using (var context = new DataContext())
             //{
             //    var usersIDs = context.Users.Select(x => x.UserID);
