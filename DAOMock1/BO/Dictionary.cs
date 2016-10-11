@@ -14,6 +14,6 @@ namespace Kazmierczak.Languer.DAO.BO
         public int DictionaryID { get; set; }
 
         public string Name { get; set; }
-        public IEnumerable<IWord> WordsList { get; set; }
+        public List<IWord> WordsList { get; set; }
     }
 }

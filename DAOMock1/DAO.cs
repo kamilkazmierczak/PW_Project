@@ -76,12 +76,17 @@ namespace Kazmierczak.Languer.DAO
                     Console.WriteLine("User not found");
                     return;
                 }
+
+                var dictionariesIDs = context.Dictionaries.Select(x => x.DictionaryID);
+                dictionary.DictionaryID = dictionariesIDs == null ? dictionariesIDs.Max() + 1 : 1;
+
+                //Console.WriteLine(dictionary.Name);
                 
-                //user.DictionariesList.
+                user.DictionariesList.Add(dictionary);
               
 
-                Console.WriteLine("wybrales");
-                Console.WriteLine(user.Name);
+                //Console.WriteLine("wybrales");
+                //Console.WriteLine(user.Name);
 
                 //Console.WriteLine(user.);
                 //user.UserID = usersIDs == null ? usersIDs.Max() + 1 : 1;

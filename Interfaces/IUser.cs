@@ -10,7 +10,7 @@ namespace Kazmierczak.Languer.Interfaces
     {
         int UserID { get; set; }
         string Name { get; set; }
-        IEnumerable<IDictionary> DictionariesList { get; set; }
+        List<IDictionary> DictionariesList { get; set; }
         //void addUserDictionary(IDictionary dictionary);
     }
 }

@@ -10,7 +10,7 @@ namespace Kazmierczak.Languer.DAO.BO
 {
     public class User : IUser
     {
-        public IEnumerable<IDictionary> DictionariesList
+        public List<IDictionary> DictionariesList
         {
             get;
             set;
@@ -27,6 +27,11 @@ namespace Kazmierczak.Languer.DAO.BO
         {
             get;
             set;
+        }
+
+        public User()
+        {
+            DictionariesList = new List<IDictionary>();
         }
 
         //public void addUserDictionary(IDictionary dictionary)
