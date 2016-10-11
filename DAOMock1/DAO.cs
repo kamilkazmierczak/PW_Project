@@ -64,6 +64,61 @@ namespace Kazmierczak.Languer.DAO
         {
             var currentUser = CurrentOptions.CurrentUser;
 
+            //var d1 = new Dictionary();
+            //d1.
+
+
+            var user1 = new User();
+            user1.UserID = 222;
+            user1.Name = "Test2";
+
+            var d1 = new Dictionary();
+            d1.DictionaryID = 321;
+            d1.Name = "d2";
+            
+
+            user1.Dictionaries.Add(d1);
+
+            using (var context = new DataContext())
+            {
+                context.Users.Add(user1);
+                context.SaveChanges();
+            }
+
+
+
+            //using (var context = new DataContext())
+            //{
+            //    var query = context.Users.SingleOrDefault(x => x.UserID == currentUser.UserID);
+            //    if (query != null)
+            //    {
+            //        //User user = new User();
+            //        //var dictionariesIDs = context.Dictionaries.Select(x => x.DictionaryID);
+            //        //dictionary.DictionaryID = dictionariesIDs == null ? dictionariesIDs.Max() + 1 : 1;
+            //        //user.DictionariesList.Add(dictionary);
+            //        //dictionary.DictionaryID = 222;
+            //        //dictionary.
+            //        var d1 = new Dictionary();
+            //        d1.DictionaryID = 1;
+            //        d1.Name = "d1";
+
+            //        //var d2 = new Dictionary();
+            //        //d2.DictionaryID = 2;
+            //        //d2.Name = "d2";
+
+            //        query.Dictionaries.Add(d1);
+
+
+            //        //query.Dictionaries.Add(dictionary as Dictionary);
+
+
+            //        //query.Name = "ratatatt";
+            //        int length = query.Dictionaries.Count();
+            //        context.SaveChanges();
+            //        Console.WriteLine("Dodalem do usera" + query.Name + "slownik" + query.Dictionaries[0].Name);
+            //    }
+            //}
+
             //using (var context = new DataContext())
             //{
             //    var query = context.Users.SingleOrDefault(x => x.UserID == currentUser.UserID);

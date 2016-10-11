@@ -10,16 +10,35 @@ namespace Kazmierczak.Languer.DAO.BO
 {
     public class User : IUser
     {
+
+        [Key]
+        public int UserID
+        {
+            get;
+            set;
+        }
+
+        public virtual List<Dictionary> Dictionaries
+        {
+            get;
+            set;
+        }
+
+        public User()
+        {
+            Dictionaries = new List<Dictionary>();
+        }
+
+        //connection to Dictionary
+        //public int DictionaryID { get; set; }
+        //public virtual Dictionary Dictionary { get; set; }
+
         //public virtual List<IDictionary> Dictionaries
         //{
         //    get;
         //    set;
         //}
-        public virtual IDictionary Dictionary
-        {
-            get;
-            set;
-        }
+
 
 
         public string Name
@@ -28,12 +47,7 @@ namespace Kazmierczak.Languer.DAO.BO
             set;
         }
 
-        [Key]
-        public int UserID
-        {
-            get;
-            set;
-        }
+
 
 
 
