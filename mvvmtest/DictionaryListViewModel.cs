@@ -72,8 +72,6 @@ namespace Kazmierczak.Languer.UI
             NewDictionary = new DictionaryViewModel();
 
         }
-        //end WTF
-
 
         private void GetAllDictionaries()
         {
