@@ -27,12 +27,12 @@
                 <TextBox Text="{Binding Name}"/>
             </StackPanel>
             <Button Command="{Binding SaveNewDictionaryCommand}">Save Dictionary</Button>
-            <StackPanel DataContext="{Binding Path=NewWord}">
+            <StackPanel DataContext="{Binding Path=WordInsertViewModel.NewWord}">
                 <Label>Add new words to selected dictionary</Label>
                 <TextBox Text="{Binding OriginName}"/>
                 <TextBox Text="{Binding SecondName}"/>
             </StackPanel>
-            <Button Command="{Binding SaveNewWordCommand}">Save new word</Button>
+            <Button Command="{Binding WordInsertViewModel.SaveNewWordCommand}">Save new word</Button>
         </StackPanel>
         
         
