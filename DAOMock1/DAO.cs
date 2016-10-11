@@ -108,25 +108,6 @@ namespace Kazmierczak.Languer.DAO
                 }
             }
 
-            //Adding word to dictionary (WORKS)
-            //int currentDictionaryID = CurrentOptions.CurrentDictionary.DictionaryID;
-            //Console.WriteLine("Current dictionary ID = " + currentDictionaryID);
-            //using (var context = new DataContext())
-            //{
-            //    var word = new Word();
-            //    word.WordID = 7;
-            //    word.OriginName = "Word7";
-
-            //    var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == currentDictionaryID);
-            //    if (query != null)
-            //    {
-            //        var wordsIDs = context.Words.Select(x => x.WordID);
-            //        word.WordID = wordsIDs == null ? wordsIDs.Max() + 1 : 1;
-            //        query.Words.Add((Word)word);
-            //        context.SaveChanges();
-            //    }
-            //}
-
         }
 
     }

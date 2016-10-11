@@ -19,6 +19,9 @@
         <DataTemplate DataType="{x:Type local:DictionaryWindowViewModel}">
             <local:DictionaryWindowView />
         </DataTemplate>
+        <DataTemplate DataType="{x:Type local:StudyWindowViewModel}">
+            <local:StudyWindowView />
+        </DataTemplate>
     </Window.Resources>
 
     
