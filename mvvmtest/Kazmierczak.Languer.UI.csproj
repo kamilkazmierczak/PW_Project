@@ -87,6 +87,7 @@
     <Compile Include="RelayCommand.cs" />
     <Compile Include="UserListViewModel.cs" />
     <Compile Include="UserViewModel.cs" />
+    <Compile Include="WordViewModel.cs" />
     <Compile Include="YearToColorConverter.cs" />
     <Page Include="ApplicationView.xaml">
       <SubType>Designer</SubType>

@@ -47,6 +47,23 @@ namespace Kazmierczak.Languer.DAO
             }
         }
 
+        public IWord CreateNewWord()
+        {
+            return new BO.Word();
+        }
+
+        public void addWord(IWord word)
+        {
+            Console.WriteLine("Adding Word");
+            //using (var context = new DataContext())
+            //{
+            //    var usersIDs = context.Users.Select(x => x.UserID);
+            //    user.UserID = usersIDs == null ? usersIDs.Max() + 1 : 1;
+            //    context.Users.Add(user as User);
+            //    context.SaveChanges();
+            //}
+        }
+
         public IEnumerable<IDictionary> GetAllDictionaries()
         {
             try{
@@ -103,5 +120,6 @@ namespace Kazmierczak.Languer.DAO
             //}
 
         }
+
     }
 }

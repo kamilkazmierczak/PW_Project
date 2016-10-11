@@ -22,5 +22,8 @@ namespace Kazmierczak.Languer.Interfaces
 
         IDictionary CreateNewDictionary();
         void addDictionary(IDictionary dictionary);
+
+        IWord CreateNewWord();
+        void addWord(IWord word);
     }
 }

@@ -27,6 +27,12 @@
                 <TextBox Text="{Binding Name}"/>
             </StackPanel>
             <Button Command="{Binding SaveNewDictionaryCommand}">Save Dictionary</Button>
+            <StackPanel DataContext="{Binding Path=TODO}">
+                <Label>Add new words to selected dictionary</Label>
+                <TextBox Text="{Binding TODO}"/>
+                <TextBox Text="{Binding TODO}"/>
+                <Button Command="{Binding TODO}">Save new word</Button>
+            </StackPanel>
         </StackPanel>
         
         

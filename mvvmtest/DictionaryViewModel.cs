@@ -29,6 +29,8 @@ namespace Kazmierczak.Languer.UI
             _dictionary = dictionary;
         }
 
+
+
         public string Name
         {
             get { return _dictionary.Name; }
