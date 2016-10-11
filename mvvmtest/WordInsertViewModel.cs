@@ -46,10 +46,7 @@ namespace Kazmierczak.Languer.UI
             newWord.WordID = _newWord.WordID;
 
             _dao.addWord(newWord.getWord());
-            //Dictionaries.Add(newDictionary);
-            //_dao.addDictionary(newDictionary.getDictionary());
-            //NewDictionary = new DictionaryViewModel();
-
+            NewWord = new WordViewModel();
         }
 
         public WordViewModel NewWord
