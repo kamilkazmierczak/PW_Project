@@ -14,6 +14,7 @@ namespace Kazmierczak.Languer.UI
 
         //private WordInsertViewModel _wordInsertViewModel;
         private UserListViewModel _userListViewModel;
+        private WordShowViewModel _wordShowViewModel;
         //private IDAO _dao;
 
         public StudyWindowViewModel()
@@ -22,7 +23,18 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            _wordShowViewModel = new WordShowViewModel();
             _userListViewModel = new UserListViewModel();
+        }
+
+        public WordShowViewModel WordShowViewModel
+        {
+            get { return _wordShowViewModel; }
+            set
+            {
+                _wordShowViewModel = value;
+                RaisePropertyChanged("WordShowViewModel");
+            }
         }
 
         public UserListViewModel UserListViewModel

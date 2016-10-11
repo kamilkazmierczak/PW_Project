@@ -24,6 +24,9 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
+            <Label>asd</Label>
+            <Button Command="{Binding WordShowViewModel.ConfirmWordCommand}">Confirm Word</Button>
         </StackPanel>
+        
     </Grid>
 </UserControl>
