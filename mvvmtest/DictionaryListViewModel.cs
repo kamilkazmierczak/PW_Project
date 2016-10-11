@@ -17,12 +17,24 @@ namespace Kazmierczak.Languer.UI
         private ObservableCollection<DictionaryViewModel> _dictionaries;
         private DictionaryViewModel _newDictionary;
         private DictionaryViewModel _selectedDictionary;
+        private WordInsertViewModel _wordInsertViewModel;
         private IDAO _dao;
 
+        public DictionaryListViewModel()
+        {
+            #if DEBUG
+            if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
+            #endif
 
+            _wordInsertViewModel = new WordInsertViewModel();
 
-
-        private WordInsertViewModel _wordInsertViewModel;
+            _dictionaries = new ObservableCollection<DictionaryViewModel>();
+            _dao = new DAO.DAO();
+            GetAllDictionaries();
+            NewDictionary = new DictionaryViewModel();
+            
+            _saveNewDictionaryCommand = new RelayCommand(param => this.SaveDictionary());
+        }
 
         public WordInsertViewModel WordInsertViewModel
         {
@@ -35,25 +47,6 @@ namespace Kazmierczak.Languer.UI
         }
 
 
-
-        public DictionaryListViewModel()
-        {
-            #if DEBUG
-            if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
-            #endif
-
-            //delete this
-            _wordInsertViewModel = new WordInsertViewModel();
-
-            _dictionaries = new ObservableCollection<DictionaryViewModel>();
-            _dao = new DAO.DAO();
-            GetAllDictionaries();
-            NewDictionary = new DictionaryViewModel();
-            
-            _saveNewDictionaryCommand = new RelayCommand(param => this.SaveDictionary());
-        }
-
-      
         private RelayCommand _saveNewDictionaryCommand;
 
         public ICommand SaveNewDictionaryCommand
