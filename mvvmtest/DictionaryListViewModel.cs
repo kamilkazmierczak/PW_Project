@@ -77,10 +77,10 @@ namespace Kazmierczak.Languer.UI
 
         private void GetAllDictionaries()
         {
-            //foreach (var c in _dao.GetAllDictionaries())
-            //{
-            //    _dictionaries.Add(new DictionaryViewModel(c));
-            //}
+            foreach (var c in _dao.GetAllDictionaries())
+            {
+                _dictionaries.Add(new DictionaryViewModel(c));
+            }
         }
 
         public ObservableCollection<DictionaryViewModel> Dictionaries

@@ -12,7 +12,7 @@ namespace Kazmierczak.Languer.Interfaces
         //IEnumerable<ICar> GetAllCars();
         //
         IEnumerable<IUser> GetAllUsers();
-        //IEnumerable<IDictionary> GetAllDictionaries();
+        IEnumerable<IDictionary> GetAllDictionaries();
 
         //ICar CreateNewCar();
         //void AddCar(ICar car);
