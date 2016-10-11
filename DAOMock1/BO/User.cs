@@ -28,5 +28,19 @@ namespace Kazmierczak.Languer.DAO.BO
             get;
             set;
         }
+
+        //public void addUserDictionary(IDictionary dictionary)
+        //{
+        //    foreach (var dic in DictionariesList)
+        //    {
+        //        if (dictionary.Name == dic.Name)
+        //        {
+
+        //        }else
+        //        {
+        //            (List<Dictionary>)DictionariesList.add
+        //        }
+        //    }
+        //}
     }
 }

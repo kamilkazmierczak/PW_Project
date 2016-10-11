@@ -7,3 +7,4 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\EntityFramewor
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\bin\Debug\EntityFramework.SqlServer.xml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Kazmierczak.Languer.Interfaces.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Kazmierczak.Languer.Interfaces.pdb
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Interfaces\obj\Debug\Kazmierczak.Languer.Interfaces.csprojResolveAssemblyReference.cache
