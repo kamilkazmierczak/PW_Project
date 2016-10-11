@@ -47,13 +47,13 @@ namespace Kazmierczak.Languer.DAO
             }
         }
 
-        public IEnumerable<IDictionary> GetAllDictionaries()
-        {
-            using (var context = new DataContext())
-            {
-                return Enumerable.Cast<IDictionary>(context.Dictionaries).ToList();
-            }
-        }
+        //public IEnumerable<IDictionary> GetAllDictionaries()
+        //{
+        //    //using (var context = new DataContext())
+        //    //{
+        //    //    return Enumerable.Cast<IDictionary>(context.Dictionaries).ToList();
+        //    //}
+        //}
 
         public IDictionary CreateNewDictionary()
         {
@@ -70,28 +70,30 @@ namespace Kazmierczak.Languer.DAO
             //    if (query != null)
             //    {
             //        //User user = new User();
-            //        var dictionariesIDs = context.Dictionaries.Select(x => x.DictionaryID);
-            //        dictionary.DictionaryID = dictionariesIDs == null ? dictionariesIDs.Max() + 1 : 1;
+            //        //var dictionariesIDs = context.Dictionaries.Select(x => x.DictionaryID);
+            //        //dictionary.DictionaryID = dictionariesIDs == null ? dictionariesIDs.Max() + 1 : 1;
             //        //user.DictionariesList.Add(dictionary);
-            //        query.DictionariesList.Add(dictionary);
-            //        int length = query.DictionariesList.Count();
+            //        dictionary.DictionaryID = 222;
+            //        query.Dictionaries.Add(dictionary);
+            //        //query.Name = "ratatatt";
+            //        int length = query.Dictionaries.Count();
             //        context.SaveChanges();
-            //        Console.WriteLine("Dodalem do usera" + query.Name + "slownik" + query.DictionariesList[length - 1].Name);
+            //        Console.WriteLine("Dodalem do usera" + query.Name + "slownik" + query.Dictionaries[0].Name);
             //    }
             //}
 
 
-            using (var context = new DataContext())
-            {
-                var query = context.Users.SingleOrDefault(x => x.UserID == currentUser.UserID);
-                if (query != null)
-                {
-                    foreach (var item in query.DictionariesList)
-                    {
-                        Console.WriteLine("DictionaryID: "+item.DictionaryID+" Name: "+item.Name);
-                    }
-                }
-            }
+            //using (var context = new DataContext())
+            //{
+            //    var query = context.Users.SingleOrDefault(x => x.UserID == currentUser.UserID);
+            //    if (query != null)
+            //    {
+            //        foreach (var item in query.Dictionaries)
+            //        {
+            //            Console.WriteLine("DictionaryID: "+item.DictionaryID+" Name: "+item.Name);
+            //        }
+            //    }
+            //}
 
 
 

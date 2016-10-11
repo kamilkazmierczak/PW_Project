@@ -10,11 +10,17 @@ namespace Kazmierczak.Languer.DAO.BO
 {
     public class User : IUser
     {
-        public List<IDictionary> DictionariesList
+        //public virtual List<IDictionary> Dictionaries
+        //{
+        //    get;
+        //    set;
+        //}
+        public virtual IDictionary Dictionary
         {
             get;
             set;
         }
+
 
         public string Name
         {
@@ -29,10 +35,12 @@ namespace Kazmierczak.Languer.DAO.BO
             set;
         }
 
-        public User()
-        {
-            DictionariesList = new List<IDictionary>();
-        }
+
+
+        //public User()
+        //{
+        //    Dictionaries = new List<IDictionary>();
+        //}
 
         //public void addUserDictionary(IDictionary dictionary)
         //{
