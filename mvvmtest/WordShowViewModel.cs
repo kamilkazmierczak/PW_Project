@@ -22,6 +22,8 @@ namespace Kazmierczak.Languer.UI
         private IDAO _dao;
         private int? _currentWordIndex;
         private string _confirmInfo;
+        private bool _custom;
+        private decimal _customPercentage;
 
         private List<WordViewModel> _words;
 
@@ -32,6 +34,8 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            _custom = false;
+            _customPercentage = 0;
             _confirmInfo = "";
             _currentWordIndex = null;
             _dao = new DAO.DAO();
@@ -97,6 +101,29 @@ namespace Kazmierczak.Languer.UI
                 RaisePropertyChanged("ConfirmInfo");
             }
         }
+
+        public decimal CustomPercentage
+        {
+            get { return _customPercentage; }
+            set
+            {
+                _customPercentage = value;
+                Console.WriteLine("User set %:"+value);
+                RaisePropertyChanged("CustomPercentage");
+            }
+        }
+
+        public bool Custom
+        {
+            get { return _custom; }
+            set
+            {
+                _custom = value;
+                Console.WriteLine("CHECKBOX"+_custom);
+                RaisePropertyChanged("Custom");
+            }
+        }
+
 
         public WordViewModel CurrentWord
         {
