@@ -21,6 +21,7 @@ namespace Kazmierczak.Languer.UI
         //private DictionaryViewModel _selectedDictionary;
         private IDAO _dao;
         private int? _currentWordIndex;
+        private string _confirmInfo;
 
         private List<WordViewModel> _words;
 
@@ -31,6 +32,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            _confirmInfo = "start";
             _currentWordIndex = null;
             _dao = new DAO.DAO();
             //_words = new ObservableCollection<WordViewModel>();
@@ -72,6 +74,15 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
+        public string ConfirmInfo
+        {
+            get { return _confirmInfo; }
+            set
+            {
+                _confirmInfo = value;
+                RaisePropertyChanged("ConfirmInfo");
+            }
+        }
 
         public WordViewModel CurrentWord
         {
@@ -116,12 +127,14 @@ namespace Kazmierczak.Languer.UI
                 Console.WriteLine("Typed: " + _currentWord.SecondName);
                 Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
                 Console.WriteLine("CORRECT");
+                ConfirmInfo = "DOBRZE";
             }
             else
             {//incorrect
                 Console.WriteLine("Typed: " + _currentWord.SecondName);
                 Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
                 Console.WriteLine("INCORRECT");
+                ConfirmInfo = "ŹLE";
             }
 
             _currentWordIndex++;
