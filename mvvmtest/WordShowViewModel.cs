@@ -74,6 +74,20 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
+        private void GetCustomWordsForDictionary(decimal percent)
+        {
+            _currentWordIndex = 0;
+            if (_dao.GetCustomWordsForDictionary(percent) != null)
+            {
+                Console.WriteLine("Custom Words");
+                foreach (var c in _dao.GetCustomWordsForDictionary(percent))
+                {
+                    Console.WriteLine(c.OriginName + ";" + c.SecondName);
+                    _words.Add(new WordViewModel(c));
+                }
+            }
+        }
+
         public string ConfirmInfo
         {
             get { return _confirmInfo; }
@@ -111,7 +125,11 @@ namespace Kazmierczak.Languer.UI
         private void StartStudy()
         {
             Console.WriteLine("Start Study");
+
+
             GetAllWordsForDictionary();
+            //GetCustomWordsForDictionary(70);
+
             if (_currentWordIndex != null){
                 copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
             }

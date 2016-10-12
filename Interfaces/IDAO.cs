@@ -14,6 +14,7 @@ namespace Kazmierczak.Languer.Interfaces
         IEnumerable<IUser> GetAllUsers();
         IEnumerable<IDictionary> GetAllDictionaries();
         IEnumerable<IWord> GetAllWordsForDictionary();
+        IEnumerable<IWord> GetCustomWordsForDictionary(decimal percent);
 
         //ICar CreateNewCar();
         //void AddCar(ICar car);

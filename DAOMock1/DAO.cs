@@ -151,6 +151,37 @@ namespace Kazmierczak.Languer.DAO
             return null;
         }
 
+        public IEnumerable<IWord> GetCustomWordsForDictionary(decimal percent)
+        {
+            try
+            {
+                int currentDictionaryID = CurrentOptions.CurrentDictionary.DictionaryID;
+                using (var context = new DataContext())
+                {
+                    var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == currentDictionaryID);
+                    List<Word> customSet = new List<Word>();
+                    foreach (var item in query.Words)
+                    {
+                        decimal incorrectPercentage = ((decimal)item.Incorrect / (decimal)(item.Incorrect + item.Correct)) * 100;
+                        if (incorrectPercentage >= percent)
+                        {
+                            customSet.Add(item);
+                        }
+                    }
+
+
+                    return Enumerable.Cast<IWord>(customSet).ToList();
+                }
+            }
+            catch (Exception)
+            {
+                Console.WriteLine("Dictionary was not selected");
+            }
+            return null;
+        }
+
+       
+
 
         public IDictionary CreateNewDictionary()
         {
