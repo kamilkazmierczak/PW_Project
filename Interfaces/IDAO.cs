@@ -27,5 +27,7 @@ namespace Kazmierczak.Languer.Interfaces
         IWord CreateNewWord();
         void addWord(IWord word);
         void updateWord(IWord word,bool correct);
+
+        decimal GetCorrectAnswerPercentage(IDictionary dictionary);
     }
 }

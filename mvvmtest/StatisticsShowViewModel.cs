@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
+using Kazmierczak.Languer.Interfaces;
 
 namespace Kazmierczak.Languer.UI
 {
@@ -13,6 +14,7 @@ namespace Kazmierczak.Languer.UI
         private DictionaryViewModel _selectedDictionary;
         private string _correctPercentage;
         private string _incorrectPercentage;
+        private IDAO _dao;
 
         public StatisticsShowViewModel()
         {
@@ -20,6 +22,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            _dao = new DAO.DAO();
             _correctPercentage = "A";
             _incorrectPercentage = "B";
 
@@ -45,6 +48,22 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
+        private void calculatePercentagesForSelectedDictionary()
+        {
+            //Console.WriteLine("calc");
+            decimal correctPercentage = _dao.GetCorrectAnswerPercentage(_selectedDictionary.getDictionary());
+            decimal incorrectPercentage = 100 - correctPercentage;
+
+            if (correctPercentage == -1)
+            {
+                correctPercentage = 0;
+                incorrectPercentage = 0;
+            }
+
+            CorrectPercentage = correctPercentage.ToString() + "%";
+            IncorrectPercentage = incorrectPercentage.ToString() + "%";
+        }
+
         public DictionaryViewModel SelectedDictionary
         {
             get { return _selectedDictionary; }
@@ -52,6 +71,7 @@ namespace Kazmierczak.Languer.UI
             {
                 _selectedDictionary = value;
                 Console.WriteLine("HOHOHO"+_selectedDictionary.Name);
+                calculatePercentagesForSelectedDictionary();
                 RaisePropertyChanged("SelectedDictionary");
             }
         }

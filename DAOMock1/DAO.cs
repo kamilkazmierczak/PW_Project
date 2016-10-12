@@ -52,6 +52,29 @@ namespace Kazmierczak.Languer.DAO
             return new BO.Word();
         }
 
+        public decimal GetCorrectAnswerPercentage(IDictionary dictionary)
+        {
+            int correct = 0;
+            int incorrect = 0;
+            Console.WriteLine("Getting percentage (dao)");
+            using (var context = new DataContext())
+            {
+                var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == dictionary.DictionaryID);
+                if (query != null)
+                {
+                    foreach (var item in query.Words)
+                    {
+                        Console.WriteLine(item.OriginName+";"+item.SecondName);
+                        correct += item.Correct;
+                        incorrect += item.Incorrect;
+                    }
+                }
+            }
+            decimal val = (decimal)(correct + incorrect) == 0 ? -1 : ((decimal)correct / (decimal)(correct + incorrect)) * 100;
+            return val;
+        }
+
+
         public void updateWord(IWord word, bool correct)
         {
             Console.WriteLine("Updating word");
