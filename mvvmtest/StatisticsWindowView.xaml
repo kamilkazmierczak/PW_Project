@@ -6,7 +6,38 @@
         xmlns:local="clr-namespace:Kazmierczak.Languer.UI"
         mc:Ignorable="d"
         d:DesignHeight="300" d:DesignWidth="300">
+    <UserControl.DataContext>
+        <local:StatisticsWindowViewModel/>
+    </UserControl.DataContext>
     <Grid Background="White">
-        <Label>Statistics</Label>
+        <StackPanel>
+            <Label FontSize="20" FontWeight="Bold">Statystyki</Label>
+            <Label>Wybierz słownik</Label>
+            <ComboBox Name="comboBox1" ItemsSource="{Binding DictionaryListViewModel.Dictionaries}"  SelectedItem="{Binding StatisticsShowViewModel.SelectedDictionary}">
+                <ComboBox.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <Label Content="{Binding DictionaryID}"/>
+                            <Label Content="{Binding Name}" MinWidth="60"/>
+                        </StackPanel>
+                    </DataTemplate>
+                </ComboBox.ItemTemplate>
+            </ComboBox>
+            <Grid DataContext="{Binding Path=StatisticsShowViewModel.TODO}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" >Poprawne</Label>
+                <TextBox IsEnabled="False" Grid.Column="1" Grid.Row="0" Text="{Binding TODO}"/>
+                <Label Grid.Column="0" Grid.Row="1">Błędne</Label>
+                <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding TODO}"/>
+            </Grid>
+        </StackPanel>
     </Grid>
 </UserControl>
