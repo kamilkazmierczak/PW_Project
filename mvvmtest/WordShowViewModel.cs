@@ -98,6 +98,7 @@ namespace Kazmierczak.Languer.UI
             GetAllWordsForDictionary();
             if (_currentWordIndex != null){
                 CurrentWord = _words.ElementAt((int)_currentWordIndex);
+                CurrentWord.SecondName = "";
             }
            
         }
@@ -105,11 +106,28 @@ namespace Kazmierczak.Languer.UI
         private void ConfirmWord()
         {
             Console.WriteLine("CONFIRM WORD");
+
+            if (_currentWord.SecondName == _words.ElementAt((int)_currentWordIndex).SecondName)
+            {//correct
+                Console.WriteLine("Typed: "+_currentWord.SecondName);
+                Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
+                Console.WriteLine("CORRECT");
+            }
+            else
+            {//incorrect
+                Console.WriteLine("Typed: " + _currentWord.SecondName);
+                Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
+                Console.WriteLine("INCORRECT");
+            }
+
             _currentWordIndex++;
             if (_words.Count > _currentWordIndex)
-            {
+            {//next word
+
                 CurrentWord = _words.ElementAt((int)_currentWordIndex);
-            }else
+                CurrentWord.SecondName = "";
+            }
+            else
             {
                 Console.WriteLine("Przejrzane wszystkie wyrazy");
             }
