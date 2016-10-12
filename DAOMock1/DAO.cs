@@ -103,19 +103,23 @@ namespace Kazmierczak.Languer.DAO
             Console.WriteLine("Adding Word");
             Console.WriteLine(word.OriginName + word.SecondName);
             //Adding word to dictionary (WORKS)
-            int currentDictionaryID = CurrentOptions.CurrentDictionary.DictionaryID;
-            Console.WriteLine("Current dictionary ID = " + currentDictionaryID);
-            using (var context = new DataContext())
+            if (CurrentOptions.CurrentDictionary.DictionaryID > 0)
             {
-                var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == currentDictionaryID);
-                if (query != null)
+                int currentDictionaryID = CurrentOptions.CurrentDictionary.DictionaryID;
+                Console.WriteLine("Current dictionary ID = " + currentDictionaryID);
+                using (var context = new DataContext())
                 {
-                    var wordsIDs = context.Words.Select(x => x.WordID);
-                    word.WordID = wordsIDs == null ? wordsIDs.Max() + 1 : 1;
-                    query.Words.Add((Word)word);
-                    context.SaveChanges();
+                    var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == currentDictionaryID);
+                    if (query != null)
+                    {
+                        var wordsIDs = context.Words.Select(x => x.WordID);
+                        word.WordID = wordsIDs == null ? wordsIDs.Max() + 1 : 1;
+                        query.Words.Add((Word)word);
+                        context.SaveChanges();
+                    }
                 }
             }
+            
         }
 
         public IEnumerable<IDictionary> GetAllDictionaries()

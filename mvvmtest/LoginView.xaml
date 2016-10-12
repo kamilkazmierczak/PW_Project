@@ -12,6 +12,12 @@
     
     <Grid Background="White">
         <StackPanel>
+            <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center">
+            Aby rozpocząć naukę <LineBreak/>
+            musisz wybrać użytkownika
+            </TextBlock>
+            <Label Height="10"/>
+            
             <Label>Wybierz użytkownika</Label>
             <ComboBox Name="comboBox" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedItem}">
                 <ComboBox.ItemTemplate>
@@ -24,16 +30,17 @@
                 </ComboBox.ItemTemplate>
             </ComboBox>
 
-           
-           <StackPanel DataContext="{Binding Path=EditedUser}">
+            <Label Height="30"/>
+            <StackPanel DataContext="{Binding Path=EditedUser}">
                 <Label>Dodaj użytkownika</Label>
                 <TextBox x:Name="userName" Height="20" Text="{Binding Name}"/>
                 <!--<TextBox Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>-->
             </StackPanel>
+
             
-                <!--<Button Command="{Binding AddUserCommand}">Add User</Button>-->
+            <!--<Button Command="{Binding AddUserCommand}">Add User</Button>-->
                 <!--<Button Command="{Binding SaveNewUserCommand}">Save User</Button>-->
-            <Button Command="{Binding SaveNewUserCommand}" Content="Zapisz słownik">
+            <Button Command="{Binding SaveNewUserCommand}" Content="Dodaj użytkownika">
                 <Button.Style>
                     <Style TargetType="Button">
                         <Setter Property="IsEnabled" Value="True" />

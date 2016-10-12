@@ -22,25 +22,9 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <StackPanel DataContext="{Binding Path=NewDictionary}">
-                <Label>Dodaj nowy słownik</Label>
-                <TextBox x:Name="dictionaryName" Height="25" Text="{Binding Name}"/>
-            </StackPanel>
-            <!--<Button Command="{Binding SaveNewDictionaryCommand}">Save Dictionary</Button>-->
-            <Button Command="{Binding SaveNewDictionaryCommand}" Content="Zapisz słownik">
-                <Button.Style>
-                    <Style TargetType="Button">
-                        <Setter Property="IsEnabled" Value="True" />
-                        <Style.Triggers>
-                            <DataTrigger Binding="{Binding Text, ElementName=dictionaryName}" Value="">
-                                <Setter Property="IsEnabled" Value="False" />
-                            </DataTrigger>
-                        </Style.Triggers>
-                    </Style>
-                </Button.Style>
-            </Button>
-            <Label Height="50"/>
-            <Label FontSize="18" FontWeight="Bold">Dodaj nowe wyrazy do wybranego słownika</Label>
+           
+           
+            <Label FontSize="15" FontWeight="Bold">Dodaj nowe wyrazy do wybranego słownika</Label>
             <Grid DataContext="{Binding Path=WordInsertViewModel.NewWord}">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*" />
@@ -69,6 +53,24 @@
                                 <Setter Property="IsEnabled" Value="False" />
                             </DataTrigger>
                          
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+            <Label Height="20"/>
+            <StackPanel DataContext="{Binding Path=NewDictionary}">
+                <Label  FontSize="15" FontWeight="Bold">Dodaj nowy słownik</Label>
+                <TextBox x:Name="dictionaryName" Height="25" Text="{Binding Name}"/>
+            </StackPanel>
+            <!--<Button Command="{Binding SaveNewDictionaryCommand}">Save Dictionary</Button>-->
+            <Button Command="{Binding SaveNewDictionaryCommand}" Content="Zapisz słownik">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="IsEnabled" Value="True" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=dictionaryName}" Value="">
+                                <Setter Property="IsEnabled" Value="False" />
+                            </DataTrigger>
                         </Style.Triggers>
                     </Style>
                 </Button.Style>

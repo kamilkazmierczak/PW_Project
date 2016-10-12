@@ -54,22 +54,19 @@ namespace Kazmierczak.Languer.UI
             decimal correctPercentage = _dao.GetCorrectAnswerPercentage(_selectedDictionary.getDictionary());
             decimal incorrectPercentage = 100 - correctPercentage;
 
-            if (correctPercentage == -1)
-            {
+            CorrectPercentage = correctPercentage.ToString("#.##") + "%";
+            IncorrectPercentage = incorrectPercentage.ToString("#.##") + "%";
+
+            if (correctPercentage == -1){
                 correctPercentage = 0;
                 incorrectPercentage = 0;
             }
 
             if (correctPercentage == 0)
-            {
                 CorrectPercentage = "0%";
+
+            if (incorrectPercentage == 0)
                 IncorrectPercentage = "0%";
-            }
-            else
-            {
-                CorrectPercentage = correctPercentage.ToString("#.##") + "%";
-                IncorrectPercentage = incorrectPercentage.ToString("#.##") + "%";
-            }
 
 
 
