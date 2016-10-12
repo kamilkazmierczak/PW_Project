@@ -60,8 +60,19 @@ namespace Kazmierczak.Languer.UI
                 incorrectPercentage = 0;
             }
 
-            CorrectPercentage = correctPercentage.ToString() + "%";
-            IncorrectPercentage = incorrectPercentage.ToString() + "%";
+            if (correctPercentage == 0)
+            {
+                CorrectPercentage = "0%";
+                IncorrectPercentage = "0%";
+            }
+            else
+            {
+                CorrectPercentage = correctPercentage.ToString("#.##") + "%";
+                IncorrectPercentage = incorrectPercentage.ToString("#.##") + "%";
+            }
+
+
+
         }
 
         public DictionaryViewModel SelectedDictionary

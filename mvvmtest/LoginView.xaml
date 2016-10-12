@@ -12,7 +12,7 @@
     
     <Grid Background="White">
         <StackPanel>
-            <Label>Choose user</Label>
+            <Label>Wybierz użytkownika</Label>
             <ComboBox Name="comboBox" ItemsSource="{Binding Users}" SelectedItem="{Binding SelectedItem}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
@@ -26,16 +26,27 @@
 
            
            <StackPanel DataContext="{Binding Path=EditedUser}">
-                <Label>Add new user</Label>
-                <TextBox Text="{Binding Name}"/>
+                <Label>Dodaj użytkownika</Label>
+                <TextBox x:Name="userName" Height="20" Text="{Binding Name}"/>
                 <!--<TextBox Text="{Binding Name, ValidatesOnDataErrors=True, UpdateSourceTrigger=PropertyChanged}"/>-->
             </StackPanel>
             
                 <!--<Button Command="{Binding AddUserCommand}">Add User</Button>-->
-                <Button Command="{Binding SaveNewUserCommand}">Save User</Button>
-            
-           
-           
+                <!--<Button Command="{Binding SaveNewUserCommand}">Save User</Button>-->
+            <Button Command="{Binding SaveNewUserCommand}" Content="Zapisz słownik">
+                <Button.Style>
+                    <Style TargetType="Button">
+                        <Setter Property="IsEnabled" Value="True" />
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding Text, ElementName=userName}" Value="">
+                                <Setter Property="IsEnabled" Value="False" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </Button.Style>
+            </Button>
+
+
         </StackPanel>
         
 
