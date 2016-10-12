@@ -32,7 +32,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
-            _confirmInfo = "start";
+            _confirmInfo = "";
             _currentWordIndex = null;
             _dao = new DAO.DAO();
             //_words = new ObservableCollection<WordViewModel>();
@@ -115,37 +115,47 @@ namespace Kazmierczak.Languer.UI
             if (_currentWordIndex != null){
                 copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
             }
-           
+            ConfirmInfo = "";
+
         }
 
         private void ConfirmWord()
         {
             Console.WriteLine("CONFIRM WORD");
 
-            if (_currentWord.SecondName == _words.ElementAt((int)_currentWordIndex).SecondName)
-            {//correct
-                Console.WriteLine("Typed: " + _currentWord.SecondName);
-                Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
-                Console.WriteLine("CORRECT");
-                ConfirmInfo = "DOBRZE";
-            }
-            else
-            {//incorrect
-                Console.WriteLine("Typed: " + _currentWord.SecondName);
-                Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
-                Console.WriteLine("INCORRECT");
-                ConfirmInfo = "ŹLE";
+            if (_currentWordIndex != null)
+            {
+                if (_currentWord.SecondName == _words.ElementAt((int)_currentWordIndex).SecondName)
+                {//correct
+                    Console.WriteLine("Typed: " + _currentWord.SecondName);
+                    Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
+                    Console.WriteLine("CORRECT");
+                    ConfirmInfo = "DOBRZE";
+                }
+                else
+                {//incorrect
+                    Console.WriteLine("Typed: " + _currentWord.SecondName);
+                    Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
+                    Console.WriteLine("INCORRECT");
+                    ConfirmInfo = "ŹLE";
+                }
+
+                _currentWordIndex++;
+                if (_words.Count > _currentWordIndex)
+                {//next word
+                    copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
+                }
+                else
+                {
+                    
+                    ConfirmInfo = _confirmInfo+"\nKoniec nauki"+"\nWybierz inny słownik i rozpocznij naukę";
+                    _words = new List<WordViewModel>();
+                    CurrentWord = new WordViewModel();
+                    _currentWordIndex = null;
+                    Console.WriteLine("Przejrzane wszystkie wyrazy");
+                }
             }
 
-            _currentWordIndex++;
-            if (_words.Count > _currentWordIndex)
-            {//next word
-                copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
-            }
-            else
-            {
-                Console.WriteLine("Przejrzane wszystkie wyrazy");
-            }
            
         }
     }
