@@ -10,9 +10,6 @@
         <DataTemplate DataType="{x:Type local:HomeViewModel}">
             <local:HomeView />
         </DataTemplate>
-        <DataTemplate DataType="{x:Type local:CarListViewModel}">
-            <local:MainWindow />
-        </DataTemplate>
         <DataTemplate DataType="{x:Type local:LoginViewModel}">
             <local:LoginView />
         </DataTemplate>

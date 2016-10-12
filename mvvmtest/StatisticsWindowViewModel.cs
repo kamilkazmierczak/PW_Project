@@ -52,7 +52,7 @@ namespace Kazmierczak.Languer.UI
         {
             get
             {
-                return "Statistics";
+                return "Statystyki";
             }
         }
     }

@@ -67,7 +67,7 @@ namespace Kazmierczak.Languer.UI
         {
             get
             {
-                return "Study";
+                return "Nauka";
             }
         }
     }

@@ -13,7 +13,7 @@ namespace Kazmierczak.Languer.UI
         {
             get
             {
-                return "Dictionary";
+                return "Słowniki";
             }
         }
     }

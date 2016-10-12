@@ -23,8 +23,8 @@ namespace Kazmierczak.Languer.UI
             #endif
 
             _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
-            _correctPercentage = "A";
-            _incorrectPercentage = "B";
+            _correctPercentage = "";
+            _incorrectPercentage = "";
 
         }
 

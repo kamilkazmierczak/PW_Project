@@ -14,6 +14,7 @@ namespace Kazmierczak.Languer.UI
     public class WordInsertViewModel : ObservableObject
     {
         private WordViewModel _newWord;
+        private bool _inputNotEmpty;
         private IDAO _dao;
 
         public WordInsertViewModel()
@@ -22,6 +23,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            InputNotEmpty = false;
             _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             NewWord = new WordViewModel();
             
@@ -51,6 +53,16 @@ namespace Kazmierczak.Languer.UI
                 NewWord = new WordViewModel();
             }
 
+        }
+
+        public bool InputNotEmpty
+        {
+            get { return _inputNotEmpty; }
+            set
+            {
+                _inputNotEmpty = value;
+                RaisePropertyChanged("InputNotEmpty");
+            }
         }
 
         public WordViewModel NewWord

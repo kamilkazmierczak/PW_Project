@@ -21,7 +21,6 @@ namespace Kazmierczak.Languer.UI
         {
             //all pages
             PageViewModels.Add(new HomeViewModel());
-            PageViewModels.Add(new CarListViewModel());
             PageViewModels.Add(new LoginViewModel());
             PageViewModels.Add(new DictionaryWindowViewModel());
             PageViewModels.Add(new StudyWindowViewModel());

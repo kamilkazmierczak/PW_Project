@@ -15,7 +15,7 @@ namespace Kazmierczak.Languer.UI
         {
             get
             {
-                return "Login Page";
+                return "Logowanie";
             }
         }
     }

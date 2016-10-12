@@ -8,8 +8,8 @@
         d:DesignHeight="300" d:DesignWidth="300">
     <Grid Background="White">
         <TextBlock FontWeight="Bold" FontSize="18" HorizontalAlignment="Center" VerticalAlignment="Center">
-            Welcome to Languer <LineBreak/>
-            Use menu on the left to start
+            Witamy w Languer <LineBreak/>
+            Użyj menu po lewej aby zacząć
         </TextBlock>
                 
     </Grid>

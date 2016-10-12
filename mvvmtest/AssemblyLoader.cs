@@ -21,7 +21,6 @@ namespace Kazmierczak.Languer.UI
 
         public static ConstructorInfo GetDAOConstructor()
         {
-
             return _daoConstructor;
         }
     }

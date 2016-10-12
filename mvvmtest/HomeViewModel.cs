@@ -14,7 +14,7 @@ namespace Kazmierczak.Languer.UI
         {
             get
             {
-                return "Home Page";
+                return "Start";
             }
         }
     }
