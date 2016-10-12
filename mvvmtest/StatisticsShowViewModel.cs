@@ -50,7 +50,6 @@ namespace Kazmierczak.Languer.UI
 
         private void calculatePercentagesForSelectedDictionary()
         {
-            //Console.WriteLine("calc");
             decimal correctPercentage = _dao.GetCorrectAnswerPercentage(_selectedDictionary.getDictionary());
             decimal incorrectPercentage = 100 - correctPercentage;
 

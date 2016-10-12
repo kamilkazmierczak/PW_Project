@@ -11,13 +11,9 @@ namespace Kazmierczak.Languer.UI
 {
     public class StudyWindowViewModel : ObservableObject, IPageViewModel
     {
-
-        //private WordInsertViewModel _wordInsertViewModel;
         private UserListViewModel _userListViewModel;
         private DictionaryListViewModel _dictionaryListViewModel;
         private WordShowViewModel _wordShowViewModel;
-        private bool _custom;
-        //private IDAO _dao;
 
         public StudyWindowViewModel()
         {

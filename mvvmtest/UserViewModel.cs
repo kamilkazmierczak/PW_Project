@@ -24,7 +24,6 @@ namespace Kazmierczak.Languer.UI
 
         public UserViewModel()
         {
-            //moja teoria na razie nie dziala to saveUser bez addUser
             IDAO dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             IUser user = dao.CreateNewUser();
             _user = user;
@@ -36,8 +35,6 @@ namespace Kazmierczak.Languer.UI
             set
             {
                 _user.Name = value;
-                //Console.WriteLine(_user.Name);
-                //Console.WriteLine("x");
                 RaisePropertyChanged("Name");
             }
         }

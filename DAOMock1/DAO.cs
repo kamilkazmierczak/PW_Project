@@ -25,12 +25,7 @@ namespace Kazmierczak.Languer.DAO
         }
 
 
-        public ICar CreateNewCar()
-        {
-            return new BO.Car();
-        }
-
-
+    
         public IUser CreateNewUser()
         {
             return new BO.User();

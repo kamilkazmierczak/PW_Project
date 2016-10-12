@@ -48,9 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BO\Car.cs" />
     <Compile Include="BO\Dictionary.cs" />
-    <Compile Include="BO\Producer.cs" />
     <Compile Include="BO\User.cs" />
     <Compile Include="BO\Word.cs" />
     <Compile Include="CurrentOptions.cs" />

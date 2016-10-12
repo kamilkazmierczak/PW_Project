@@ -48,11 +48,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ICar.cs" />
     <Compile Include="IDAO.cs" />
     <Compile Include="IDictionary.cs" />
     <Compile Include="IPageViewModel.cs" />
-    <Compile Include="IProducer.cs" />
     <Compile Include="IUser.cs" />
     <Compile Include="IWord.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

@@ -29,8 +29,6 @@ namespace Kazmierczak.Languer.UI
             _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             GetAllUsers();
 
-            //IUser user = _dao.CreateNewUser();
-            //UserViewModel uvm = new UserViewModel(user);
             EditedUser = new UserViewModel();
 
             _saveNewUserCommand = new RelayCommand(param => this.SaveUser());
@@ -38,7 +36,6 @@ namespace Kazmierczak.Languer.UI
 
        
         private RelayCommand _saveNewUserCommand;
-        //private ICommand _saveNewUserCommand; //dla add bylo RelayComamnd a nie ICommand
 
         public ICommand SaveNewUserCommand
         {
@@ -69,21 +66,14 @@ namespace Kazmierczak.Languer.UI
 
         private void SaveUser()
         {
-            //_users.Add(_editedUser); // normalnie zapisać też do DAO
-            //_dao.AddUser(_editedUser);
-
-            //IUser user = _dao.CreateNewUser();
-            //UserViewModel uvm = new UserViewModel(user);
-            //EditedUser = uvm;
             UserViewModel newUser = new UserViewModel();
             newUser.Name = _editedUser.Name;
             newUser.UserID = _editedUser.UserID;
             Users.Add(newUser);
             _dao.AddUser(newUser.getUser());
             EditedUser = new UserViewModel();
-
         }
-        //end WTF
+
 
 
         private void GetAllUsers()

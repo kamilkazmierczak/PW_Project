@@ -4,7 +4,6 @@ using System.Text;
 using System.Threading.Tasks;
 using Kazmierczak.Languer;
 using System.Collections.Generic;
-//using Kazmierczak.Languer.DAO;
 
 namespace Kazmierczak.Languer.Interfaces
 {

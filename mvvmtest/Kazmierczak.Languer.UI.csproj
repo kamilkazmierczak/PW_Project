@@ -97,7 +97,6 @@
     <Compile Include="WordInsertViewModel.cs" />
     <Compile Include="WordShowViewModel.cs" />
     <Compile Include="WordViewModel.cs" />
-    <Compile Include="YearToColorConverter.cs" />
     <Page Include="ApplicationView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

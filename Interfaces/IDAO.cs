@@ -8,17 +8,11 @@ namespace Kazmierczak.Languer.Interfaces
 {
     public interface IDAO
     {
-        //IEnumerable<IProducer> GetAllProducers();
-        //IEnumerable<ICar> GetAllCars();
-        //
         IEnumerable<IUser> GetAllUsers();
         IEnumerable<IDictionary> GetAllDictionaries();
         IEnumerable<IWord> GetAllWordsForDictionary();
         IEnumerable<IWord> GetCustomWordsForDictionary(decimal percent);
 
-        //ICar CreateNewCar();
-        //void AddCar(ICar car);
-        //
         IUser CreateNewUser();
         void AddUser(IUser user);
 

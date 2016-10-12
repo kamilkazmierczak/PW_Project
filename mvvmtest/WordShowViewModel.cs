@@ -15,10 +15,7 @@ namespace Kazmierczak.Languer.UI
 {
     public class WordShowViewModel : ObservableObject
     {
-        //private WordViewModel _newWord;
-        //private ObservableCollection<WordViewModel> _words;
         private WordViewModel _currentWord;
-        //private DictionaryViewModel _selectedDictionary;
         private IDAO _dao;
         private int? _currentWordIndex;
         private string _confirmInfo;
@@ -39,12 +36,8 @@ namespace Kazmierczak.Languer.UI
             _confirmInfo = "";
             _currentWordIndex = null;
             _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
-            //_words = new ObservableCollection<WordViewModel>();
             _words = new List<WordViewModel>();
-            //GetAllWordsForDictionary();
             _currentWord = new WordViewModel();
-
-            //NewWord = new WordViewModel();
             _startStudyCommand = new RelayCommand(param => this.StartStudy());
             _confirmWordCommand = new RelayCommand(param => this.ConfirmWord());
         }
@@ -161,7 +154,6 @@ namespace Kazmierczak.Languer.UI
                 GetAllWordsForDictionary();
             }
 
-            //GetCustomWordsForDictionary(70);
 
             if (_words.Count() > 0)
             {
