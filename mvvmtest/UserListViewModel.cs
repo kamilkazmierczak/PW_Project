@@ -26,7 +26,7 @@ namespace Kazmierczak.Languer.UI
             #endif
 
             _users = new ObservableCollection<UserViewModel>();
-            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            _dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             GetAllUsers();
 
             EditedUser = new UserViewModel();

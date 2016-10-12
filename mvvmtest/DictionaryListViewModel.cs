@@ -29,7 +29,7 @@ namespace Kazmierczak.Languer.UI
             _wordInsertViewModel = new WordInsertViewModel();
 
             _dictionaries = new ObservableCollection<DictionaryViewModel>();
-            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            _dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             GetAllDictionaries();
             NewDictionary = new DictionaryViewModel();
             

@@ -22,7 +22,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
-            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            _dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             _correctPercentage = "";
             _incorrectPercentage = "";
 

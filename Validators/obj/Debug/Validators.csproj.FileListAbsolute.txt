@@ -15,5 +15,6 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\EntityFramewor
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\EntityFramework.xml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\obj\Debug\Validators.csprojResolveAssemblyReference.cache
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\obj\Debug\Validators.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\Validators\obj\Debug\Validators.pdb

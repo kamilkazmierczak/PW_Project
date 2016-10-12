@@ -8,11 +8,11 @@ using System.Threading.Tasks;
 
 namespace Kazmierczak.Languer.UI
 {
-    public static class AssemblyLoader
+    public static class LateBinding
     {
         private static readonly ConstructorInfo _daoConstructor;
 
-        static AssemblyLoader()
+        static LateBinding()
         {
 
             Assembly daoAssembly = Assembly.LoadFrom(new Settings().DAO);

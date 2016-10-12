@@ -24,7 +24,7 @@ namespace Kazmierczak.Languer.UI
             #endif
 
             InputNotEmpty = false;
-            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            _dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             NewWord = new WordViewModel();
             
             _saveNewWordCommand = new RelayCommand(param => this.SaveWord());

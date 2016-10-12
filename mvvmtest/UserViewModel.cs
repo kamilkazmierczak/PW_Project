@@ -24,7 +24,7 @@ namespace Kazmierczak.Languer.UI
 
         public UserViewModel()
         {
-            IDAO dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            IDAO dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             IUser user = dao.CreateNewUser();
             _user = user;
         }

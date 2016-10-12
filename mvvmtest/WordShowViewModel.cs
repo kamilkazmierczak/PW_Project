@@ -35,7 +35,7 @@ namespace Kazmierczak.Languer.UI
             _customPercentage = 0;
             _confirmInfo = "";
             _currentWordIndex = null;
-            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
+            _dao = (IDAO)LateBinding.GetDAOConstructor().Invoke(new object[] { });
             _words = new List<WordViewModel>();
             _currentWord = new WordViewModel();
             _startStudyCommand = new RelayCommand(param => this.StartStudy());
