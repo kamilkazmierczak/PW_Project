@@ -52,6 +52,29 @@ namespace Kazmierczak.Languer.DAO
             return new BO.Word();
         }
 
+        public void updateWord(IWord word, bool correct)
+        {
+            Console.WriteLine("Updating word");
+            using (var context = new DataContext())
+            {
+                var query = context.Words.SingleOrDefault(x => x.WordID == word.WordID);
+                if (query != null)
+                {
+                    if (correct)
+                    {
+                        query.Correct++;
+                    }else
+                    {
+                        query.Incorrect++;
+                    }
+                    context.Words.Attach(query);
+                    context.Entry(query).State = System.Data.Entity.EntityState.Modified;
+                    context.SaveChanges();
+                }
+            }
+        }
+
+
         public void addWord(IWord word)
         {
             Console.WriteLine("Adding Word");
@@ -127,6 +150,7 @@ namespace Kazmierczak.Languer.DAO
             }
 
         }
+
 
     }
 }

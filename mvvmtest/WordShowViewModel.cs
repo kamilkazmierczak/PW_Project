@@ -119,9 +119,11 @@ namespace Kazmierczak.Languer.UI
 
         }
 
+
         private void ConfirmWord()
         {
             Console.WriteLine("CONFIRM WORD");
+            bool correct = false;
 
             if (_currentWordIndex != null)
             {
@@ -131,6 +133,7 @@ namespace Kazmierczak.Languer.UI
                     Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
                     Console.WriteLine("CORRECT");
                     ConfirmInfo = "DOBRZE";
+                    correct = true;
                 }
                 else
                 {//incorrect
@@ -138,7 +141,11 @@ namespace Kazmierczak.Languer.UI
                     Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
                     Console.WriteLine("INCORRECT");
                     ConfirmInfo = "ŹLE";
+                    correct = false;
                 }
+
+                //DAO
+                _dao.updateWord(_currentWord.getWord(), correct);
 
                 _currentWordIndex++;
                 if (_words.Count > _currentWordIndex)
