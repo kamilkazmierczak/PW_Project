@@ -24,6 +24,24 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
+            <Label>Wybierz rodzaj słówek</Label>
+            <Grid DataContext="{Binding Path=WordShowViewModel.CurrentWord}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="2*" />
+                    <ColumnDefinition Width="1*" />
+
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" >Często błędne (więcej niż podany %)</TextBlock>
+                <TextBox IsEnabled="True" Grid.Column="1" Grid.Row="0" Text="{Binding TODO}"/>
+
+            </Grid>
+            
+            
             <Button Command="{Binding WordShowViewModel.StartStudyCommand}">Start Study</Button>
             <Grid DataContext="{Binding Path=WordShowViewModel.CurrentWord}">
                 <Grid.ColumnDefinitions>
