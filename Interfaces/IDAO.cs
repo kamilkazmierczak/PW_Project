@@ -13,6 +13,7 @@ namespace Kazmierczak.Languer.Interfaces
         //
         IEnumerable<IUser> GetAllUsers();
         IEnumerable<IDictionary> GetAllDictionaries();
+        IEnumerable<IWord> GetAllWordsForDictionary();
 
         //ICar CreateNewCar();
         //void AddCar(ICar car);

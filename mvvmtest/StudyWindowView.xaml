@@ -14,12 +14,12 @@
         <StackPanel>
             <Label FontSize="20" FontWeight="Bold">Zacznik naukę</Label>
             <Label>Choose user</Label>
-            <ComboBox Name="comboBox" ItemsSource="{Binding UserListViewModel.Users}" SelectedItem="{Binding SelectedItem}">
+            <ComboBox Name="comboBox" ItemsSource="{Binding WordShowViewModel.Words}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding UserID}"/>
-                            <Label Content="{Binding Name}" MinWidth="60"/>
+                            <Label Content="{Binding OriginName}"/>
+                            <Label Content="{Binding SecondName}" MinWidth="60"/>
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>

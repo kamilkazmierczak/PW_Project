@@ -88,6 +88,24 @@ namespace Kazmierczak.Languer.DAO
             return null;
         }
 
+        public IEnumerable<IWord> GetAllWordsForDictionary()
+        {
+            try
+            {
+                int currentDictionaryID = CurrentOptions.CurrentDictionary.DictionaryID;
+                using (var context = new DataContext())
+                {
+                    var query = context.Dictionaries.SingleOrDefault(x => x.DictionaryID == currentDictionaryID);
+                    return Enumerable.Cast<IWord>(query.Words).ToList();
+                }
+            }
+            catch (Exception){
+                Console.WriteLine("Dictionary was not selected");
+            }
+            return null;
+        }
+
+
         public IDictionary CreateNewDictionary()
         {
             return new BO.Dictionary();

@@ -7,12 +7,14 @@ using Kazmierczak.Languer.Interfaces;
 using System.Windows.Input;
 using System.ComponentModel;
 using System.Windows;
+using System.Collections.ObjectModel;
 
 namespace Kazmierczak.Languer.UI
 {
     public class WordShowViewModel : ObservableObject
     {
         //private WordViewModel _newWord;
+        private ObservableCollection<WordViewModel> _words;
         private IDAO _dao;
 
 
@@ -23,6 +25,10 @@ namespace Kazmierczak.Languer.UI
             #endif
 
             _dao = new DAO.DAO();
+            _words = new ObservableCollection<WordViewModel>();
+            GetAllWordsForDictionary();
+            
+            
             //NewWord = new WordViewModel();
 
             _confirmWordCommand = new RelayCommand(param => this.ConfirmWord());
@@ -35,6 +41,30 @@ namespace Kazmierczak.Languer.UI
         {
             get { return _confirmWordCommand; }
         }
+
+
+        private void GetAllWordsForDictionary()
+        {
+            if (_dao.GetAllWordsForDictionary() !=null)
+            {
+                foreach (var c in _dao.GetAllWordsForDictionary())
+                {
+                    Console.WriteLine(c.OriginName+";"+c.SecondName);
+                    _words.Add(new WordViewModel(c));
+                }
+            }
+        }
+
+        public ObservableCollection<WordViewModel> Words
+        {
+            get { return _words; }
+            set
+            {
+                _words = value;
+                RaisePropertyChanged("Words");
+            }
+        }
+
 
         private void ConfirmWord()
         {
