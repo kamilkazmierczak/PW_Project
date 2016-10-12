@@ -153,14 +153,29 @@ namespace Kazmierczak.Languer.UI
         {
             Console.WriteLine("Start Study");
 
+            if (_custom)
+            {
+                GetCustomWordsForDictionary(_customPercentage);
+            }else
+            {
+                GetAllWordsForDictionary();
+            }
 
-            GetAllWordsForDictionary();
             //GetCustomWordsForDictionary(70);
 
-            if (_currentWordIndex != null){
-                copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
+            if (_words.Count() > 0)
+            {
+                if (_currentWordIndex != null)
+                {
+                    copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
+                }
+                ConfirmInfo = "";
+            }else
+            {
+                ConfirmInfo = "Brak słówek";
             }
-            ConfirmInfo = "";
+
+ 
 
         }
 
