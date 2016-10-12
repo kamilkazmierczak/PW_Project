@@ -37,7 +37,7 @@ namespace Kazmierczak.Languer.UI
             _dao = new DAO.DAO();
             //_words = new ObservableCollection<WordViewModel>();
             _words = new List<WordViewModel>();
-            GetAllWordsForDictionary();
+            //GetAllWordsForDictionary();
             _currentWord = new WordViewModel();
 
             //NewWord = new WordViewModel();
