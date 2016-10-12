@@ -13,13 +13,13 @@
         
         <StackPanel>
             <Label FontSize="20" FontWeight="Bold">Zacznik naukę</Label>
-            <Label>Choose user</Label>
-            <ComboBox Name="comboBox" ItemsSource="{Binding WordShowViewModel.Words}">
+            <Label>Wybierz słownik</Label>
+            <ComboBox Name="comboBox1" ItemsSource="{Binding DictionaryListViewModel.Dictionaries}"  SelectedItem="{Binding DictionaryListViewModel.SelectedDictionary}">
                 <ComboBox.ItemTemplate>
                     <DataTemplate>
                         <StackPanel Orientation="Horizontal">
-                            <Label Content="{Binding OriginName}"/>
-                            <Label Content="{Binding SecondName}" MinWidth="60"/>
+                            <Label Content="{Binding DictionaryID}"/>
+                            <Label Content="{Binding Name}" MinWidth="60"/>
                         </StackPanel>
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
