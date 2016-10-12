@@ -85,6 +85,10 @@
     </Compile>
     <Compile Include="ObservableObject.cs" />
     <Compile Include="RelayCommand.cs" />
+    <Compile Include="StatisticsWindowView.xaml.cs">
+      <DependentUpon>StatisticsWindowView.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="StatisticsWindowViewModel.cs" />
     <Compile Include="StudyWindowView.xaml.cs">
       <DependentUpon>StudyWindowView.xaml</DependentUpon>
     </Compile>
@@ -129,6 +133,10 @@
       <DependentUpon>OldMainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Page Include="StatisticsWindowView.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="StudyWindowView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>

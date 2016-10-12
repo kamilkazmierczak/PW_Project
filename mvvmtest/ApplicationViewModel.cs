@@ -25,6 +25,7 @@ namespace Kazmierczak.Languer.UI
             PageViewModels.Add(new LoginViewModel());
             PageViewModels.Add(new DictionaryWindowViewModel());
             PageViewModels.Add(new StudyWindowViewModel());
+            PageViewModels.Add(new StatisticsWindowViewModel());
 
             CurrentPageViewModel = PageViewModels[0];           
         }
