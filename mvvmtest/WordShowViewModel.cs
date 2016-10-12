@@ -18,6 +18,7 @@ namespace Kazmierczak.Languer.UI
         private WordViewModel _currentWord;
         //private DictionaryViewModel _selectedDictionary;
         private IDAO _dao;
+        private int? _currentWordIndex;
 
 
         public WordShowViewModel()
@@ -26,6 +27,7 @@ namespace Kazmierczak.Languer.UI
             if (DesignerProperties.GetIsInDesignMode(new DependencyObject())) return;
             #endif
 
+            _currentWordIndex = null;
             _dao = new DAO.DAO();
             _words = new ObservableCollection<WordViewModel>();
             GetAllWordsForDictionary();
@@ -54,6 +56,7 @@ namespace Kazmierczak.Languer.UI
 
         private void GetAllWordsForDictionary()
         {
+            _currentWordIndex = 0;
             if (_dao.GetAllWordsForDictionary() !=null)
             {
                 foreach (var c in _dao.GetAllWordsForDictionary())
@@ -93,11 +96,23 @@ namespace Kazmierczak.Languer.UI
         {
             Console.WriteLine("Start Study");
             GetAllWordsForDictionary();
+            if (_currentWordIndex != null){
+                CurrentWord = _words.ElementAt((int)_currentWordIndex);
+            }
+           
         }
 
         private void ConfirmWord()
         {
             Console.WriteLine("CONFIRM WORD");
+            _currentWordIndex++;
+            if (_words.Count > _currentWordIndex)
+            {
+                CurrentWord = _words.ElementAt((int)_currentWordIndex);
+            }else
+            {
+                Console.WriteLine("Przejrzane wszystkie wyrazy");
+            }
             
 
             //UserViewModel newUser = new UserViewModel();
