@@ -15,6 +15,8 @@ namespace Kazmierczak.Languer.UI
     {
         //private WordViewModel _newWord;
         private ObservableCollection<WordViewModel> _words;
+        private WordViewModel _currentWord;
+        //private DictionaryViewModel _selectedDictionary;
         private IDAO _dao;
 
 
@@ -27,10 +29,10 @@ namespace Kazmierczak.Languer.UI
             _dao = new DAO.DAO();
             _words = new ObservableCollection<WordViewModel>();
             GetAllWordsForDictionary();
-            
-            
-            //NewWord = new WordViewModel();
+            _currentWord = new WordViewModel();
 
+            //NewWord = new WordViewModel();
+            _startStudyCommand = new RelayCommand(param => this.StartStudy());
             _confirmWordCommand = new RelayCommand(param => this.ConfirmWord());
         }
 
@@ -40,6 +42,13 @@ namespace Kazmierczak.Languer.UI
         public ICommand ConfirmWordCommand
         {
             get { return _confirmWordCommand; }
+        }
+
+        private RelayCommand _startStudyCommand;
+
+        public ICommand StartStudyCommand
+        {
+            get { return _startStudyCommand; }
         }
 
 
@@ -65,10 +74,39 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
+        public WordViewModel CurrentWord
+        {
+            get
+            {
+                Console.WriteLine("GETcurrentWord: "+_currentWord.OriginName);
+                return _currentWord;
+            }
+            set
+            {
+                Console.WriteLine("SETcurrentWord: " + value.OriginName);
+                _currentWord = value;
+                RaisePropertyChanged("CurrentWord");
+            }
+        }
+
+        private void StartStudy()
+        {
+            Console.WriteLine("Start Study");
+            GetAllWordsForDictionary();
+        }
 
         private void ConfirmWord()
         {
             Console.WriteLine("CONFIRM WORD");
+            
+
+            //UserViewModel newUser = new UserViewModel();
+            //newUser.Name = _editedUser.Name;
+            //newUser.UserID = _editedUser.UserID;
+            //Users.Add(newUser);
+            //_dao.AddUser(newUser.getUser());
+            //EditedUser = new UserViewModel();
+
             //WordViewModel newWord = new WordViewModel();
             //newWord.OriginName = _newWord.OriginName;
             //newWord.SecondName = _newWord.SecondName;

@@ -15,6 +15,5 @@ C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\Interfaces.dll
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.xml
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\bin\Debug\EntityFramework.SqlServer.xml
-C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.csprojResolveAssemblyReference.cache
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.exe
 C:\Users\Kamil\Documents\Kodzenie\PW_Project\LINQTest\obj\Debug\LINQTest.pdb

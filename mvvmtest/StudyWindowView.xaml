@@ -24,7 +24,22 @@
                     </DataTemplate>
                 </ComboBox.ItemTemplate>
             </ComboBox>
-            <Label>asd</Label>
+            <Button Command="{Binding WordShowViewModel.StartStudyCommand}">Start Study</Button>
+            <Grid DataContext="{Binding Path=WordShowViewModel.CurrentWord}">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="1*" />
+                    <ColumnDefinition Width="2*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*" />
+                    <RowDefinition Height="2*" />
+                </Grid.RowDefinitions>
+
+                <Label Grid.Column="0" Grid.Row="0" >Original</Label>
+                <TextBox Grid.Column="1" Grid.Row="0" Text="{Binding OriginName}"/>
+                <Label Grid.Column="0" Grid.Row="1">Translation</Label>
+                <TextBox Grid.Column="1" Grid.Row="1" Text="{Binding SecondName}"/>
+            </Grid>
             <Button Command="{Binding WordShowViewModel.ConfirmWordCommand}">Confirm Word</Button>
         </StackPanel>
         
