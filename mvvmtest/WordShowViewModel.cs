@@ -8,17 +8,21 @@ using System.Windows.Input;
 using System.ComponentModel;
 using System.Windows;
 using System.Collections.ObjectModel;
+using System.IO;
+using System.Runtime.Serialization.Formatters.Binary;
 
 namespace Kazmierczak.Languer.UI
 {
     public class WordShowViewModel : ObservableObject
     {
         //private WordViewModel _newWord;
-        private ObservableCollection<WordViewModel> _words;
+        //private ObservableCollection<WordViewModel> _words;
         private WordViewModel _currentWord;
         //private DictionaryViewModel _selectedDictionary;
         private IDAO _dao;
         private int? _currentWordIndex;
+
+        private List<WordViewModel> _words;
 
 
         public WordShowViewModel()
@@ -29,7 +33,8 @@ namespace Kazmierczak.Languer.UI
 
             _currentWordIndex = null;
             _dao = new DAO.DAO();
-            _words = new ObservableCollection<WordViewModel>();
+            //_words = new ObservableCollection<WordViewModel>();
+            _words = new List<WordViewModel>();
             GetAllWordsForDictionary();
             _currentWord = new WordViewModel();
 
@@ -67,15 +72,6 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
-        public ObservableCollection<WordViewModel> Words
-        {
-            get { return _words; }
-            set
-            {
-                _words = value;
-                RaisePropertyChanged("Words");
-            }
-        }
 
         public WordViewModel CurrentWord
         {
@@ -92,13 +88,21 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
+        private void copyWord(WordViewModel source, WordViewModel dest)
+        {
+            dest.WordID = source.WordID;
+            dest.Correct = source.Correct;
+            dest.Incorrect = source.Incorrect;
+            dest.OriginName = source.OriginName;
+            dest.SecondName = "";
+        }
+
         private void StartStudy()
         {
             Console.WriteLine("Start Study");
             GetAllWordsForDictionary();
             if (_currentWordIndex != null){
-                CurrentWord = _words.ElementAt((int)_currentWordIndex);
-                CurrentWord.SecondName = "";
+                copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
             }
            
         }
@@ -109,7 +113,7 @@ namespace Kazmierczak.Languer.UI
 
             if (_currentWord.SecondName == _words.ElementAt((int)_currentWordIndex).SecondName)
             {//correct
-                Console.WriteLine("Typed: "+_currentWord.SecondName);
+                Console.WriteLine("Typed: " + _currentWord.SecondName);
                 Console.WriteLine("Original: " + _words.ElementAt((int)_currentWordIndex).SecondName);
                 Console.WriteLine("CORRECT");
             }
@@ -123,32 +127,13 @@ namespace Kazmierczak.Languer.UI
             _currentWordIndex++;
             if (_words.Count > _currentWordIndex)
             {//next word
-
-                CurrentWord = _words.ElementAt((int)_currentWordIndex);
-                CurrentWord.SecondName = "";
+                copyWord(_words.ElementAt((int)_currentWordIndex), CurrentWord);
             }
             else
             {
                 Console.WriteLine("Przejrzane wszystkie wyrazy");
             }
-            
-
-            //UserViewModel newUser = new UserViewModel();
-            //newUser.Name = _editedUser.Name;
-            //newUser.UserID = _editedUser.UserID;
-            //Users.Add(newUser);
-            //_dao.AddUser(newUser.getUser());
-            //EditedUser = new UserViewModel();
-
-            //WordViewModel newWord = new WordViewModel();
-            //newWord.OriginName = _newWord.OriginName;
-            //newWord.SecondName = _newWord.SecondName;
-            //newWord.Incorrect = _newWord.Incorrect;
-            //newWord.Correct = _newWord.Correct;
-            //newWord.WordID = _newWord.WordID;
-
-            //_dao.addWord(newWord.getWord());
-            //NewWord = new WordViewModel();
+           
         }
     }
 }
