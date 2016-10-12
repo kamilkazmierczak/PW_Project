@@ -52,6 +52,7 @@ namespace Kazmierczak.Languer.UI
             {
                 _selectedItem = value;
                 CurrentOptions.CurrentUser = _selectedItem.getUser();
+                CurrentOptions._logged = true;
                 RaisePropertyChanged("SelectedItem");
             }
         }

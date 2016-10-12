@@ -11,6 +11,7 @@ namespace Kazmierczak.Languer.DAO
     {
         private static IUser _currentUser;
         private static IDictionary _currentDictionary;
+        public static bool _logged;
 
         public static IDictionary CurrentDictionary
         {

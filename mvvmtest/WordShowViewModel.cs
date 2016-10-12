@@ -185,7 +185,7 @@ namespace Kazmierczak.Languer.UI
             Console.WriteLine("CONFIRM WORD");
             bool correct = false;
 
-            if (_currentWordIndex != null)
+            if (_currentWordIndex != null && _words.Count() >0)
             {
                 if (_currentWord.SecondName == _words.ElementAt((int)_currentWordIndex).SecondName)
                 {//correct

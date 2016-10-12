@@ -77,12 +77,16 @@ namespace Kazmierczak.Languer.UI
 
         private void SaveDictionary()
         {
-            DictionaryViewModel newDictionary = new DictionaryViewModel();
-            newDictionary.Name = _newDictionary.Name;
-            newDictionary.DictionaryID = _newDictionary.DictionaryID;
-            Dictionaries.Add(newDictionary);
-            _dao.addDictionary(newDictionary.getDictionary());
-            NewDictionary = new DictionaryViewModel();
+            if (CurrentOptions.CurrentUser!=null)
+            {
+                DictionaryViewModel newDictionary = new DictionaryViewModel();
+                newDictionary.Name = _newDictionary.Name;
+                newDictionary.DictionaryID = _newDictionary.DictionaryID;
+                Dictionaries.Add(newDictionary);
+                _dao.addDictionary(newDictionary.getDictionary());
+                NewDictionary = new DictionaryViewModel();
+            }
+
 
         }
 

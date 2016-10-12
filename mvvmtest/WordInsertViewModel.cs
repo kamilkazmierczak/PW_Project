@@ -38,15 +38,19 @@ namespace Kazmierczak.Languer.UI
 
         private void SaveWord()
         {
-            WordViewModel newWord = new WordViewModel();
-            newWord.OriginName = _newWord.OriginName;
-            newWord.SecondName = _newWord.SecondName;
-            newWord.Incorrect = _newWord.Incorrect;
-            newWord.Correct = _newWord.Correct;
-            newWord.WordID = _newWord.WordID;
+            if (CurrentOptions.CurrentUser!=null)
+            {
+                WordViewModel newWord = new WordViewModel();
+                newWord.OriginName = _newWord.OriginName;
+                newWord.SecondName = _newWord.SecondName;
+                newWord.Incorrect = _newWord.Incorrect;
+                newWord.Correct = _newWord.Correct;
+                newWord.WordID = _newWord.WordID;
 
-            _dao.addWord(newWord.getWord());
-            NewWord = new WordViewModel();
+                _dao.addWord(newWord.getWord());
+                NewWord = new WordViewModel();
+            }
+
         }
 
         public WordViewModel NewWord

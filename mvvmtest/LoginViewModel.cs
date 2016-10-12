@@ -10,6 +10,7 @@ namespace Kazmierczak.Languer.UI
 {
     public class LoginViewModel : ObservableObject, IPageViewModel
     {
+
         public string Name
         {
             get

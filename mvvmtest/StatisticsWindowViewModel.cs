@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Kazmierczak.Languer.Interfaces;
 using System.ComponentModel;
 using System.Windows;
+using Kazmierczak.Languer.DAO;
 
 namespace Kazmierczak.Languer.UI
 {
@@ -46,7 +47,7 @@ namespace Kazmierczak.Languer.UI
             }
         }
 
-      
+
         public string Name
         {
             get
