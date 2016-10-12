@@ -24,7 +24,7 @@ namespace Kazmierczak.Languer.UI
 
         public DictionaryViewModel()
         {
-            IDAO dao = new DAO.DAO();
+            IDAO dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             IDictionary dictionary = dao.CreateNewDictionary();
             _dictionary = dictionary;
         }

@@ -26,7 +26,7 @@ namespace Kazmierczak.Languer.UI
             #endif
 
             _users = new ObservableCollection<UserViewModel>();
-            _dao = new DAO.DAO(); // moze byc late binding, wydzielic do osobnej klasy i pobranie z niej obiektu dostepu do danych
+            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             GetAllUsers();
 
             //IUser user = _dao.CreateNewUser();

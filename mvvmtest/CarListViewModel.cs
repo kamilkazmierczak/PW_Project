@@ -32,7 +32,7 @@ namespace Kazmierczak.Languer.UI
         public CarListViewModel()
         {
             _cars = new ObservableCollection<CarViewModel>();
-            _dao = new DAO.DAO(); // moze byc late binding, wydzielic do osobnej klasy i pobranie z niej obiektu dostepu do danych
+            //_dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             _view = (ListCollectionView)CollectionViewSource.GetDefaultView(_cars);
             FilterData = "";
             GetAllCars();

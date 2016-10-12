@@ -24,7 +24,7 @@ namespace Kazmierczak.Languer.UI
 
         public WordViewModel()
         {
-            IDAO dao = new DAO.DAO();
+            IDAO dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             IWord word = dao.CreateNewWord();
             _word = word;
         }

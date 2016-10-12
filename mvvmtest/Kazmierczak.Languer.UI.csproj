@@ -66,6 +66,7 @@
       <DependentUpon>ApplicationView.xaml</DependentUpon>
     </Compile>
     <Compile Include="ApplicationViewModel.cs" />
+    <Compile Include="AssemblyLoader.cs" />
     <Compile Include="DictionaryListViewModel.cs" />
     <Compile Include="DictionaryViewModel.cs" />
     <Compile Include="DictionaryWindowView.xaml.cs">

@@ -22,5 +22,14 @@ namespace Kazmierczak.Languer.UI.Properties {
                 return defaultInstance;
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("..\\..\\..\\mvvmtest\\bin\\Debug\\Kazmierczak.Languer.DAO.dll")]
+        public string DAO {
+            get {
+                return ((string)(this["DAO"]));
+            }
+        }
     }
 }

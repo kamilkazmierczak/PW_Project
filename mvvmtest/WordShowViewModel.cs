@@ -38,7 +38,7 @@ namespace Kazmierczak.Languer.UI
             _customPercentage = 0;
             _confirmInfo = "";
             _currentWordIndex = null;
-            _dao = new DAO.DAO();
+            _dao = (IDAO)AssemblyLoader.GetDAOConstructor().Invoke(new object[] { });
             //_words = new ObservableCollection<WordViewModel>();
             _words = new List<WordViewModel>();
             //GetAllWordsForDictionary();
